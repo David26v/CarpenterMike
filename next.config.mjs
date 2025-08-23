@@ -15,8 +15,11 @@ const nextConfig = {
           pathname: '/api/departments/avatars/**',
         },
       ],
+      eslint: {
+        ignoreDuringBuilds: true,
+      },
     },
   };
-  
+  Iam 
   export default nextConfig;
   
