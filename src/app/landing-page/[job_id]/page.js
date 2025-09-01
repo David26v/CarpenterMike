@@ -270,7 +270,7 @@ const JobsDetailView = () => {
                     className="w-full border-white/30 text-white hover:bg-white/10"
                   >
                     <Mail className="mr-2 h-4 w-4" />
-                    Request Quote
+                     Request Quote
                   </Button>
                 </div>
               </CardContent>

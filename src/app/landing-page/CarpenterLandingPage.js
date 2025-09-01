@@ -21,13 +21,11 @@ import { siteData } from './data/siteData';
 import ContactUs from './components/contact';
 import JobsDone from './components/jobs';
 import { useRouter } from 'next/navigation';
-import JobDialog from './components/JobDialog';
 import Footer from './components/Footer';
 
 const CarpenterPortfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
-  const [selectedJob, setSelectedJob] = useState(null);
   const [scrollY, setScrollY] = useState(0);
   const [showAlert, setShowAlert] = useState(false);
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
@@ -61,8 +59,6 @@ const CarpenterPortfolio = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const openJobModal = (job) => setSelectedJob(job);
-  const closeJobModal = () => setSelectedJob(null);
   const router = useRouter();
 
   const handleContactSubmit = (e) => {
@@ -174,7 +170,6 @@ const CarpenterPortfolio = () => {
       </nav>
 
 
-      {/* Home Section */}
      {/* Home Section */}
      {activeSection === 'home' && (
         <>
@@ -415,7 +410,6 @@ const CarpenterPortfolio = () => {
         </>
       )}
 
-      {/* Enhanced About */}
       {activeSection === 'about' && (
         <section id="about" className="pt-32 pb-20 min-h-screen bg-gradient-to-br from-slate-50 via-white to-amber-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -507,7 +501,7 @@ const CarpenterPortfolio = () => {
       {activeSection === 'jobs' && (
         <JobsDone
           jobs={jobs}
-          openJobModal={openJobModal}
+          NavigateToDetailed={handleViewDetalJob}
         />
       )}
 
@@ -520,12 +514,7 @@ const CarpenterPortfolio = () => {
         />
       )}
 
-      {/* Enhanced Job Detail Modal */}
-      <JobDialog
-        selectedJob={selectedJob}
-        closeJobModal={closeJobModal}
-        handleViewDetalJob={handleViewDetalJob}
-      />
+     
 
       {/* Floating Consultation Button */}
       <div className="fixed bottom-8 right-8 z-30">

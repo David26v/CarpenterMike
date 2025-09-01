@@ -24,19 +24,7 @@ const Footer = (props) => {
               <p className="text-gray-300 leading-relaxed mb-6">
                 Transforming luxury homes with master craftsmanship and uncompromising attention to detail.
               </p>
-              <div className="flex space-x-4">
-                {siteData.contact.social.map((social, index) => {
-                  const Icon = social.icon;
-                  return (
-                    <div
-                      key={index}
-                      className="w-12 h-12 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-amber-500 transition-all duration-300 cursor-pointer group"
-                    >
-                      <Icon className="h-5 w-5 text-gray-400 group-hover:text-white transition-colors duration-300" />
-                    </div>
-                  );
-                })}
-              </div>
+             
             </div>
             
             <div>

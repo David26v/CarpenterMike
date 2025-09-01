@@ -12,7 +12,7 @@ import { Menu, X, Phone, Mail, MapPin, Star, ArrowRight,  CheckCircle, Eye,  Shi
 
 
 const JobsDone = (props) => {
-    const {jobs ,openJobModal} = props 
+    const {jobs ,NavigateToDetailed } = props 
   return (
     <div>
          <section id="jobs" className="pt-32 pb-20 min-h-screen bg-slate-900">
@@ -35,7 +35,7 @@ const JobsDone = (props) => {
                 >
                   <Card
                     className="cursor-pointer hover:shadow-2xl transition-all duration-700 transform hover:-translate-y-6 bg-slate-800/80 backdrop-blur-xl border-slate-700/50 hover:border-amber-500/50 group overflow-hidden"
-                    onClick={() => openJobModal(job)}
+                    onClick={() => NavigateToDetailed(job.id)}
                   >
                     <div className="relative overflow-hidden">
                       <img
