@@ -118,7 +118,7 @@ export const jobs = [
     description: "Custom-built kitchen hood with premium wood finish and integrated ventilation, designed to match cabinetry seamlessly.",
     category: "Kitchen",
     rating: 5,
-    preview_images: "/gallery/Ashworth_Kitchen_Makeover/IMG_3921.jpg",
+    preview_images: "/gallery/Ashworth_Hood/IMG_5523.jpg",
     gallery: [
       "/gallery/Ashworth_Hood/IMG_5523.jpg",
       "/gallery/Ashworth_Hood/IMG_5524.jpg",
@@ -236,7 +236,7 @@ export const jobs = [
     description: "Precision tile installation in kitchen and bathroom areas, with custom patterns and moisture-resistant sealing.",
     category: "Renovation",
     features: ["Custom Patterns", "Waterproofing", "Grout Sealing", "Floor & Wall Work"],
-    preview_images: "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
+    preview_images: "/gallery/Ashworth_Tile_Job/IMG_3992.jpg",
     gallery: [
       "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_1720.jpg",
@@ -491,7 +491,7 @@ export const jobs = [
     materials: "Maple wood, quartz, LED strips",
     price: "₱680,000",
     rating: 5,
-    preview_images: "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
+    preview_images: "/gallery/Elizabeth_Kitchen_Makeover/Before 1.jpeg",
     gallery: [
       "/gallery/Elizabeth_Kitchen_Makeover/Before 1.jpeg",
       "/gallery/Elizabeth_Kitchen_Makeover/Before 2.jpg",

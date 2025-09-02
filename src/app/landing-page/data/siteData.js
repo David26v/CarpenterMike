@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, Hammer, Home, Wrench, Ruler } from 'lucide-react';
+import { Instagram, Facebook, Youtube, Hammer, Home, Wrench, Ruler, Smile } from 'lucide-react';
 
 export const siteData = {
 
@@ -19,10 +19,12 @@ export const siteData = {
   },
 
   stats: [
-    { number: '30+', label: 'Years of Experience', icon: Ruler, color: 'gray' },
-    { number: '200+', label: 'Completed Renovations', icon: Home, color: 'blue' },
-    { number: '150+', label: 'Custom Carpentry Projects', icon: Wrench, color: 'green' },
+    { number: '30+', label: 'Years Experience', icon: Ruler },
+    { number: '200+', label: 'Renovations Done', icon: Home },
+    { number: '150+', label: 'Carpentry Projects', icon: Wrench },
+    { number: '100+', label: 'Happy Clients', icon: Smile },
   ],
+  
 
   services: [
     { 
