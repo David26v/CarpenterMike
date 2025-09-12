@@ -19,13 +19,11 @@ const JobsDone = (props) => {
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [showFilters, setShowFilters] = useState(false);
 
-    // Get unique categories from jobs
     const categories = useMemo(() => {
         const uniqueCategories = [...new Set(jobs.map(job => job.category))];
         return ['All', ...uniqueCategories];
     }, [jobs]);
 
-    // Filter jobs based on search and category
     const filteredJobs = useMemo(() => {
         return jobs.filter(job => {
             const matchesSearch = job.title.toLowerCase().includes(searchQuery.toLowerCase()) ||

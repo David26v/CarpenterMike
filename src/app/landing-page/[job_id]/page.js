@@ -137,6 +137,7 @@ const JobsDetailView = () => {
     setPanOffset({ x: 0, y: 0 });
   };
 
+
   if (loading) {
     return (
       <div className="min-h-screen bg-slate-900 flex items-center justify-center">
@@ -174,7 +175,7 @@ const JobsDetailView = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Button
-                onClick={() => router.back()}
+                onClick={() => router.push('/#jobs')}
                 variant="ghost"
                 className="text-white hover:bg-white/10 rounded-full p-2"
                 size="icon"

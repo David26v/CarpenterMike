@@ -28,24 +28,28 @@ export const siteData = {
 
   services: [
     { 
+      id:1,
       title: 'Kitchen Renovations', 
       desc: 'Practical kitchen updates including cabinets, counters, and layouts designed to fit your needs and budget.', 
       icon: '🍴',
       gradient: 'from-gray-400 to-gray-600' 
     },
     { 
+      id:2,
       title: 'Bathroom Renovations', 
       desc: 'Bathroom updates and improvements with custom storage and durable finishes.', 
       icon: '🚿',
       gradient: 'from-blue-400 to-blue-600' 
     },
     { 
+      id:3,
       title: 'Custom Woodwork', 
       desc: 'Cabinetry, shelving, and built-ins tailored to your home.', 
       icon: '🪚',
       gradient: 'from-green-400 to-green-600' 
     },
     { 
+      id:4,
       title: 'General Home Projects', 
       desc: 'Small to medium home renovation projects and handyman services.', 
       icon: '🏠',

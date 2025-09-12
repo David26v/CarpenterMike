@@ -59,7 +59,10 @@ const CarpenterPortfolio = () => {
   }, []);
 
   const scrollToSection = (sectionId) => {
-    setActiveSection(sectionId);
+    // Update URL hash
+    window.location.hash = sectionId;
+  
+    // Then scroll (for UX)
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
@@ -67,6 +70,7 @@ const CarpenterPortfolio = () => {
         behavior: "smooth",
       });
     }
+  
     setIsMenuOpen(false);
   };
 
@@ -98,6 +102,25 @@ const CarpenterPortfolio = () => {
   const handleViewDetalJob = (id) => {
     router.push(`/landing-page/${id}`);
   };
+
+  useEffect(() => {
+    const updateActiveSection = () => {
+      const hash = window.location.hash.slice(1);
+      if (['home', 'about', 'jobs', 'contact'].includes(hash)) {
+        setActiveSection(hash);
+      } else {
+        setActiveSection('home');
+      }
+    };
+  
+    updateActiveSection();
+  
+    window.addEventListener('hashchange', updateActiveSection);
+  
+    return () => {
+      window.removeEventListener('hashchange', updateActiveSection);
+    };
+  }, []);
 
   return (
     <div className="min-h-screen bg-slate-900 overflow-x-hidden">
@@ -272,7 +295,7 @@ const CarpenterPortfolio = () => {
                     className="text-white border-white hover:bg-white hover:text-slate-800 px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300"
                   >
                     <Eye className="mr-2 h-5 w-5" />
-                    View Our Work
+                    View My Works
                   </Button>
                 </div>
 
@@ -427,6 +450,7 @@ const CarpenterPortfolio = () => {
                       <Button
                         variant="link"
                         className="text-amber-600 w-full justify-center hover:text-amber-700"
+                        onClick={() => scrollToSection("jobs")}
                       >
                         Learn More
                         <ArrowRight className="ml-2 h-4 w-4" />
@@ -563,18 +587,6 @@ const CarpenterPortfolio = () => {
                   <p className="text-slate-600 text-xl leading-relaxed mb-8">
                     {siteData.about.story}
                   </p>
-                  <div className="bg-gradient-to-r from-amber-500 to-orange-600 p-8 rounded-2xl text-white">
-                    <div className="flex items-center mb-4">
-                      <Shield className="h-8 w-8 mr-3" />
-                      <span className="text-xl font-bold">
-                        Premium Guarantee
-                      </span>
-                    </div>
-                    <p className="leading-relaxed">
-                      Lifetime craftsmanship warranty on all custom cabinetry
-                      and millwork. Your investment is protected.
-                    </p>
-                  </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-6">
@@ -601,7 +613,7 @@ const CarpenterPortfolio = () => {
                     className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-amber-500/25 transition-all duration-300"
                   >
                     <Crown className="mr-3 h-5 w-5" />
-                    Schedule Consultation
+                      Contact Me
                     <ArrowRight className="ml-3 h-5 w-5" />
                   </Button>
                   <Button
@@ -610,7 +622,7 @@ const CarpenterPortfolio = () => {
                     className="text-slate-700 border-2 border-slate-300 hover:bg-slate-50 text-lg px-8 py-4 rounded-2xl transition-all duration-300"
                   >
                     <Eye className="mr-3 h-5 w-5" />
-                    Premium Portfolio
+                     View My Jobs Done
                   </Button>
                 </div>
               </div>
@@ -621,7 +633,10 @@ const CarpenterPortfolio = () => {
 
       {/* Premium Portfolio */}
       {activeSection === "jobs" && (
-        <JobsDone jobs={jobs} NavigateToDetailed={handleViewDetalJob} />
+          <JobsDone 
+            jobs={jobs} 
+            NavigateToDetailed={handleViewDetalJob} 
+          />
       )}
 
       {/* Premium Contact */}
