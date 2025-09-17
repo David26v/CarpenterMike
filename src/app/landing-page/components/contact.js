@@ -38,7 +38,7 @@ const ContactUs = (props) => {
     setIsSubmitting(true);
 
     try {
-      // 🔥 FIXED: Removed trailing spaces from URL!
+      // 🔥 FIXED: Removed the TWO trailing spaces from the URL!
       const response = await fetch("https://formsubmit.co/david.fajardo26v@gmail.com", {
         method: "POST",
         body: formData,
