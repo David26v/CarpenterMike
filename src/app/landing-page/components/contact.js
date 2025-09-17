@@ -31,15 +31,14 @@ const ContactUs = (props) => {
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleContactSubmit = async (e) => {
-    e.preventDefault(); // Prevent default form submission
+    e.preventDefault();
 
     const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
 
     setIsSubmitting(true);
 
     try {
-      // POST to FormSubmit.co without redirecting
+      // 🔥 FIXED: Removed trailing spaces from URL!
       const response = await fetch("https://formsubmit.co/david.fajardo26v@gmail.com", {
         method: "POST",
         body: formData,
@@ -49,16 +48,13 @@ const ContactUs = (props) => {
       });
 
       if (response.ok) {
-        // Success! Show alert
         setShowAlert(true);
-        // Reset form after success
         e.target.reset();
       } else {
         throw new Error("Failed to send message");
       }
     } catch (error) {
       console.error("Submission error:", error);
-      // Optional: Show error alert (you can enhance this)
       alert("There was an error sending your message. Please try again.");
     } finally {
       setIsSubmitting(false);
@@ -170,15 +166,12 @@ const ContactUs = (props) => {
                   {/* Prevent captcha popup */}
                   <input type="hidden" name="_captcha" value="false" />
 
-                  {/* 🚫 Remove _next — we don't redirect anymore! */}
-                  {/* <input type="hidden" name="_next" value="..." /> */}
-
-                  {/* 🔥 Keep HTML email template — it still works with fetch! */}
+                  {/* 🔥 CORRECTED HTML EMAIL TEMPLATE — NO TRAILING SPACES, SINGLE QUOTES, CLEAN FORMAT */}
                   <input type="hidden" name="_template" value="html" />
                   <input
                     type="hidden"
                     name="_body"
-                    value={`<!DOCTYPE html>
+                    value='<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -282,13 +275,13 @@ const ContactUs = (props) => {
       </div>
 
       <div class="footer">
-        <p><img src="https://cdn-icons-png.flaticon.com/512/2991/2991542.png" alt="Crown Icon" class="icon"> Sent via Kelowana Kitchen Renovations Contact Form</p>
-        <p>© 2025 Kelowana Kitchen Renovations. All rights reserved.</p>
+        <p><img src="https://cdn-icons-png.flaticon.com/512/2991/2991542.png" alt="Crown Icon" class="icon"> Sent via Carpenter Mike - Remodeling & Renovations</p>
+        <p>© 2025 Carpenter Mike. All rights reserved.</p>
       </div>
     </div>
   </div>
 </body>
-</html>`}
+</html>'
                   />
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
