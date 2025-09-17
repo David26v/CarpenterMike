@@ -20,9 +20,7 @@ import {
   Phone,
   Star,
   ArrowRight,
-  CheckCircle,
   Eye,
-  Shield,
   Crown,
   Hammer,
   Home,
@@ -34,6 +32,10 @@ import ContactUs from "./components/contact";
 import JobsDone from "./components/jobs";
 import { useRouter } from "next/navigation";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
+import AboutUs from "./components/AboutUs";
+import VideoSection from "./components/VideoSection";
+import Process from "../HeroSection/Process";
 
 const CarpenterPortfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,12 +59,11 @@ const CarpenterPortfolio = () => {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
+  const router = useRouter();
 
   const scrollToSection = (sectionId) => {
-    // Update URL hash
     window.location.hash = sectionId;
   
-    // Then scroll (for UX)
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
@@ -76,7 +77,7 @@ const CarpenterPortfolio = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-  const router = useRouter();
+
 
   const handleContactSubmit = async (e) => {
     e.preventDefault();
@@ -134,105 +135,17 @@ const CarpenterPortfolio = () => {
         }}
       />
 
-      {/* Navigation */}
-      <nav
-        id="home"
-        className={`fixed top-0 w-full z-40 transition-all duration-700 ${
-          scrollY > 50
-            ? "bg-slate-900/90 backdrop-blur-2xl shadow-2xl border-b border-amber-500/20"
-            : "bg-transparent"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-20">
-            <div
-              className="flex items-center group cursor-pointer"
-              onClick={() => scrollToSection("home")}
-            >
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-80 transition-all duration-500 animate-pulse"></div>
-                <div className="relative bg-gradient-to-r from-amber-500 to-orange-600 p-3 rounded-2xl group-hover:scale-110 transition-all duration-500 shadow-2xl">
-                  <Crown className="h-8 w-8 text-white" />
-                </div>
-              </div>
-              <div className="ml-4">
-                <span className="text-3xl font-black bg-gradient-to-r from-amber-400 to-orange-500 bg-clip-text text-transparent">
-                  {siteData.branding.name}
-                </span>
-                <div className="text-sm font-semibold text-amber-400/80">
-                  {siteData.branding.tagline}
-                </div>
-              </div>
-            </div>
-
-            <div className="hidden lg:flex items-center space-x-2">
-              {["home", "about", "jobs", "contact"].map((item) => (
-                <Button
-                  key={item}
-                  variant={activeSection === item ? "default" : "ghost"}
-                  className={
-                    activeSection === item
-                      ? "bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 shadow-lg hover:shadow-amber-500/25 transition-all duration-300"
-                      : "text-white/80 hover:text-white hover:bg-white/10 transition-all duration-300"
-                  }
-                  onClick={() => scrollToSection(item)}
-                >
-                  {item === "jobs"
-                    ? "Portfolio"
-                    : item.charAt(0).toUpperCase() + item.slice(1)}
-                </Button>
-              ))}
-            </div>
-
-            <div className="lg:hidden">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={toggleMenu}
-                className="text-white hover:bg-white/10 transition-all duration-300"
-              >
-                {isMenuOpen ? (
-                  <X className="h-6 w-6" />
-                ) : (
-                  <Menu className="h-6 w-6" />
-                )}
-              </Button>
-            </div>
-          </div>
-        </div>
-
-        {/* Mobile Menu */}
-        <div
-          className={`lg:hidden transition-all duration-500 ${
-            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          } overflow-hidden`}
-        >
-          <div className="bg-slate-900/95 backdrop-blur-2xl border-t border-amber-500/20 shadow-2xl">
-            <div className="px-6 py-8 space-y-3">
-              {["home", "about", "jobs", "contact"].map((item, index) => (
-                <Button
-                  key={item}
-                  variant={activeSection === item ? "default" : "ghost"}
-                  className={`w-full justify-start text-lg transition-all duration-300 transform hover:scale-105 ${
-                    activeSection === item
-                      ? "bg-gradient-to-r from-amber-500 to-orange-600"
-                      : "text-white hover:bg-white/10"
-                  }`}
-                  style={{ animationDelay: `${index * 0.1}s` }}
-                  onClick={() => scrollToSection(item)}
-                >
-                  {item === "jobs"
-                    ? "Portfolio"
-                    : item.charAt(0).toUpperCase() + item.slice(1)}
-                </Button>
-              ))}
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navbar 
+        siteData={siteData}
+        scrollToSection={scrollToSection}
+        activeSection ={activeSection} 
+        scrollY={scrollY}
+        toggleMenu ={toggleMenu }
+        isMenuOpen={isMenuOpen}
+      />
 
       {/* Home Section */}
-      {activeSection === "home" && (
+      {activeSection === "home" &&  (
         <>
           {/* Simple Hero */}
           <section className="relative min-h-screen flex items-center bg-slate-800">
@@ -260,7 +173,7 @@ const CarpenterPortfolio = () => {
                       : "translate-y-10 opacity-0"
                   }`}
                 >
-                  Quality Kitchen & Bathroom Remodeling
+                 Complete Remodeling, Renovations & Makeovers  Residential & Commercial Interior.
                 </h1>
 
                 <p
@@ -306,121 +219,20 @@ const CarpenterPortfolio = () => {
                       : "translate-y-10 opacity-0"
                   }`}
                 >
-                  <div className="font-semibold text-amber-400">
-                    30+ Years Experience
-                  </div>
-                  <div>Professional craftsmanship you can trust</div>
+                 
                 </div>
               </div>
             </div>
           </section>
 
           {/* Video Section */}
-          <section className="py-16 bg-gray-50">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-                  See Our Work in Action
-                </h2>
-                <p className="text-lg text-gray-600">
-                  Watch how we transform kitchens and bathrooms
-                </p>
-              </div>
+          <VideoSection
+            scrollToSection={scrollToSection}
+          />
 
-              <div className="relative bg-black rounded-xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
-                <div className="aspect-video">
-                  <video
-                    className="w-full h-full object-cover"
-                    controls
-                    poster="/home_page_video_thumbnail.jpg"
-                    preload="metadata"
-                  >
-                    <source src="/home_page_video.mp4" type="video/mp4" />
-                    Your browser does not support the video tag.
-                  </video>
-                </div>
-              </div>
-
-              <div className="text-center mt-8">
-                <p className="text-gray-600 mb-4">
-                  Ready to start your project?
-                </p>
-                <Button
-                  onClick={() => scrollToSection("contact")}
-                  className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white px-6 py-2 rounded-lg shadow-lg hover:scale-105 transition-all duration-300"
-                >
-                  Contact Us Today
-                </Button>
-              </div>
-            </div>
-          </section>
-
-          {/* Beautiful Stats */}
-          <section className="py-20 bg-gradient-to-br from-slate-50 via-white to-amber-50 relative overflow-hidden">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(251,191,36,0.05),transparent_70%)]"></div>
-
-            <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
-              {/* Heading */}
-              <div className="text-center mb-16">
-                <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-                  Why Choose Us
-                </h2>
-                <p className="text-xl text-slate-600">
-                  Quality work, fair prices, reliable service
-                </p>
-              </div>
-
-              {/* Stats Grid */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full place-items-center">
-                {siteData.stats.map((stat, index) => {
-                  const Icon = stat.icon;
-                  const colors = ["amber", "orange", "blue", "green"];
-                  const color = colors[index % colors.length];
-
-                  return (
-                    <div key={index} className="text-center group relative">
-                      {/* Icon */}
-                      <div className="relative inline-block mb-6">
-                        <div
-                          className={`absolute inset-0 bg-gradient-to-r from-${color}-400 to-${color}-500 rounded-3xl blur-xl opacity-20 group-hover:opacity-40 transition-all duration-500 animate-pulse`}
-                        ></div>
-                        <div
-                          className={`relative bg-gradient-to-br from-${color}-500 to-${color}-600 p-6 rounded-3xl shadow-xl group-hover:scale-110 group-hover:shadow-2xl transition-all duration-500`}
-                        >
-                          <Icon className="h-10 w-10 text-white mx-auto" />
-                        </div>
-                      </div>
-
-                      {/* Number */}
-                      <div
-                        className={`text-4xl md:text-5xl font-black mb-3 bg-clip-text text-transparent group-hover:scale-110 transition-all duration-300 ${
-                          color === "amber"
-                            ? "bg-gradient-to-r from-amber-600 to-amber-700"
-                            : color === "orange"
-                            ? "bg-gradient-to-r from-orange-600 to-orange-700"
-                            : color === "blue"
-                            ? "bg-gradient-to-r from-blue-600 to-blue-700"
-                            : color === "green"
-                            ? "bg-gradient-to-r from-green-600 to-green-700"
-                            : "bg-gradient-to-r from-gray-600 to-gray-700"
-                        }`}
-                      >
-                        {stat.number}
-                      </div>
-
-                      {/* Label */}
-                      <div className="text-slate-700 font-semibold text-lg group-hover:text-slate-800 transition-colors duration-300">
-                        {stat.label}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </section>
-
+         
           {/* Simple Services */}
-          <section className="py-16 bg-gray-50">
+          <section id ='services' className="py-16 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
@@ -447,15 +259,24 @@ const CarpenterPortfolio = () => {
                       </CardDescription>
                     </CardContent>
                     <CardFooter>
-                      <Button
-                        variant="link"
-                        className="text-amber-600 w-full justify-center hover:text-amber-700"
-                        onClick={() => scrollToSection("jobs")}
-                      >
-                        Learn More
-                        <ArrowRight className="ml-2 h-4 w-4" />
-                      </Button>
-                    </CardFooter>
+                    <Button
+                      variant="link"
+                      className="text-amber-600 w-full justify-center hover:text-amber-700"
+                      onClick={() => {
+                        const serviceRoutes = {
+                          'Kitchen Renovations': '/services/kitchen-renovations',
+                          'Bathroom Renovations': '/services/bathroom-renovations', 
+                          'Custom Woodwork': '/services/custom-woodwork',
+                          'General Home Projects': '/services/general-home-projects',
+                          'Commercial Interiors': '/services/commercial-interiors'
+                        };
+                        router.push(serviceRoutes[service.title]);
+                      }}
+                    >
+                      Learn More
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </Button>
+                  </CardFooter>
                   </Card>
                 ))}
               </div>
@@ -463,58 +284,7 @@ const CarpenterPortfolio = () => {
           </section>
 
          {/* Simple Process */}
-        <section className="py-16 bg-white">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
-                How I Work
-              </h2>
-              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                A simple, personal approach from start to finish
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {[
-                {
-                  step: "1",
-                  title: "Free Consultation",
-                  desc: "I visit your home to discuss your project and provide a clear estimate.",
-                  icon: Home,
-                  color: "blue",
-                },
-                {
-                  step: "2",
-                  title: "Crafting the Work",
-                  desc: "I personally handle your project with care and quality materials.",
-                  icon: Hammer,
-                  color: "green",
-                },
-                {
-                  step: "3",
-                  title: "Final Walkthrough",
-                  desc: "Together, we review the results to make sure everything meets your expectations.",
-                  icon: CheckCircleIcon,
-                  color: "purple",
-                },
-              ].map((process, index) => (
-                <div key={index} className="text-center">
-                  <div
-                    className={`bg-${process.color}-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6`}
-                  >
-                    <div className="text-lg font-bold text-gray-800">
-                      {process.step}
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-4 text-gray-800">
-                    {process.title}
-                  </h3>
-                  <p className="text-gray-600">{process.desc}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+          <Process/>
 
 
           {/* Simple Testimonial */}
@@ -542,93 +312,10 @@ const CarpenterPortfolio = () => {
       )}
 
       {activeSection === "about" && (
-        <section
-          id="about"
-          className="pt-32 pb-20 min-h-screen bg-gradient-to-br from-slate-50 via-white to-amber-50"
-        >
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-20">
-              <h2 className="text-5xl md:text-6xl font-black mb-8 bg-gradient-to-r from-slate-800 to-slate-600 bg-clip-text text-transparent">
-                Master Craftsman
-              </h2>
-              <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                30+ years of luxury kitchen and bathroom expertise
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center mb-20">
-              <div className="relative group">
-                <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 rounded-3xl blur-3xl opacity-30 group-hover:opacity-50 transition-all duration-700"></div>
-                <div className="relative">
-                  <img
-                    src={siteData.about.image}
-                    alt={siteData.about.name}
-                    className="w-full h-[600px] object-cover rounded-3xl shadow-2xl group-hover:scale-105 transition-all duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-3xl"></div>
-                  <div className="absolute bottom-8 left-8 text-white">
-                    <div className="text-3xl font-bold mb-2">
-                      {siteData.about.name}
-                    </div>
-                    <div className="text-amber-300 text-lg font-medium">
-                      {siteData.about.title}
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div className="space-y-8">
-                <div>
-                  <h3 className="text-4xl font-black mb-8 text-slate-800">
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-600 to-orange-600">
-                      Specialist
-                    </span>
-                  </h3>
-                  <p className="text-slate-600 text-xl leading-relaxed mb-8">
-                    {siteData.about.story}
-                  </p>
-                </div>
-
-                <div className="grid grid-cols-2 gap-6">
-                  {siteData.stats.slice(0, 4).map((stat, i) => (
-                    <Card
-                      key={i}
-                      className="text-center group hover:scale-110 transition-all duration-500 bg-white/80 backdrop-blur-sm"
-                    >
-                      <CardHeader>
-                        <CardTitle className="text-4xl font-black bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
-                          {stat.number}
-                        </CardTitle>
-                        <CardDescription className="font-semibold text-slate-600">
-                          {stat.label}
-                        </CardDescription>
-                      </CardHeader>
-                    </Card>
-                  ))}
-                </div>
-
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button
-                    onClick={() => scrollToSection("contact")}
-                    className="bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-lg px-8 py-4 rounded-2xl shadow-xl hover:shadow-amber-500/25 transition-all duration-300"
-                  >
-                    <Crown className="mr-3 h-5 w-5" />
-                      Contact Me
-                    <ArrowRight className="ml-3 h-5 w-5" />
-                  </Button>
-                  <Button
-                    variant="outline"
-                    onClick={() => scrollToSection("jobs")}
-                    className="text-slate-700 border-2 border-slate-300 hover:bg-slate-50 text-lg px-8 py-4 rounded-2xl transition-all duration-300"
-                  >
-                    <Eye className="mr-3 h-5 w-5" />
-                     View My Jobs Done
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        <AboutUs 
+          siteData={siteData}
+          scrollToSection={scrollToSection}
+        />
       )}
 
       {/* Premium Portfolio */}
@@ -659,7 +346,9 @@ const CarpenterPortfolio = () => {
       </div>
 
       {/* Premium Footer */}
-      <Footer siteData={siteData} />
+      <Footer 
+        siteData={siteData}
+      />
 
       {/* Custom Styles */}
       <style jsx>{`

@@ -18,12 +18,14 @@ function Input({
       type={type}
       data-slot="input"
       className={cn(
-        "file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex w-full min-w-0 rounded-md border bg-transparent px-3 py-1 shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
+        "file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 flex w-full min-w-0 rounded-md bg-transparent px-3 py-1 shadow-xs transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm",
         sizeClasses[size],
-        // Updated gradient border and ring on focus and hover
-        "focus:border-transparent focus:ring-[3px] focus:ring-blue-500/40 focus:outline-none",
-        "hover:border-transparent hover:ring-[2px] hover:ring-violet-500/40",
-        "focus:shadow-[0_0_0_2px_rgba(99,102,241,0.4),0_0_0_4px_rgba(168,85,247,0.4)]", // blue-violet layered ring
+        // Yellow gradient border only
+        "border-[2px] border-transparent",
+        "bg-gradient-to-r from-yellow-400 via-yellow-500 to-yellow-600 bg-clip-border",
+        // Focus + hover effects
+        "focus:border-transparent focus:ring-[3px] focus:ring-yellow-400/60 focus:outline-none",
+        "hover:border-transparent hover:ring-[2px] hover:ring-yellow-500/60",
         className
       )}
       {...props}
