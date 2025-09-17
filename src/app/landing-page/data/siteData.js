@@ -86,6 +86,7 @@ export const siteData = {
       text: "Mike did an excellent job updating our kitchen. The work was solid, on budget, and he made the process easy for us.",
       author: "Elizabeth Bushea",
     },
+    shortStory: "All-trades craftsman with over 30 years of experience delivering remodels, renovations, and makeovers for residential and commercial spaces in Kelowna.",
   },
 
   contact: {

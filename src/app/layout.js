@@ -19,6 +19,7 @@ export const metadata = {
       },
     ],
     siteName: "Carpenter Mike",
+    type: "website",
   },
 
   // Twitter Card
