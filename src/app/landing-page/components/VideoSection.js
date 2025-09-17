@@ -201,7 +201,10 @@ const VideoSection = ({ scrollToSection }) => {
                 <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-orange-700 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </button>
               
-              <button className="text-gray-600 hover:text-gray-800 px-6 py-4 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 font-semibold">
+              <button 
+                className="text-gray-600 hover:text-gray-800 px-6 py-4 rounded-xl border-2 border-gray-200 hover:border-gray-300 transition-all duration-300 font-semibold"
+                onClick={() => scrollToSection("jobs")}
+              >
                 View My Works
               </button>
             </div>

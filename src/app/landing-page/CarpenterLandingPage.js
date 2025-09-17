@@ -36,6 +36,7 @@ import Navbar from "./components/Navbar";
 import AboutUs from "./components/AboutUs";
 import VideoSection from "./components/VideoSection";
 import Process from "../HeroSection/Process";
+import Image from "next/image";
 
 const CarpenterPortfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -151,10 +152,17 @@ const CarpenterPortfolio = () => {
           <section className="relative min-h-screen flex items-center bg-slate-800">
             <div
               className="absolute inset-0 bg-cover bg-center opacity-40"
-              style={{
-                backgroundImage: `url('${siteData.hero.backgroundImage}')`,
-              }}
-            ></div>
+            >
+              <Image 
+                src='/images/hero-remodeling.png'
+                alt="Carpenter Mike Remodeling"
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+                quality={100}
+              />
+
+            </div>
 
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
               <div className="max-w-4xl mx-auto">
@@ -203,9 +211,9 @@ const CarpenterPortfolio = () => {
                   </Button>
                   <Button
                     size="lg"
-                    variant="ghost"
+                    variant="default"
                     onClick={() => scrollToSection("jobs")}
-                    className="text-white border-white hover:bg-white hover:text-slate-800 px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300"
+                    className="bg-white text-black border-white hover:bg-white hover:text-slate-800 px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300"
                   >
                     <Eye className="mr-2 h-5 w-5" />
                     View My Works

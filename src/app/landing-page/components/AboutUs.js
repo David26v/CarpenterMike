@@ -71,7 +71,7 @@ const AboutUs = ({ siteData, scrollToSection }) => {
                 className="text-slate-700 border-2 border-slate-300 hover:bg-slate-50 text-lg px-8 py-4 rounded-2xl transition-all duration-300"
               >
                 <Eye className="mr-3 h-5 w-5" />
-                View My Work
+                View My Works
               </Button>
             </div>
           </div>
