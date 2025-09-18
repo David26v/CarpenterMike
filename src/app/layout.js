@@ -72,6 +72,9 @@ export default function RootLayout({ children }) {
         <meta name="twitter:description" content={metadata.twitter.description} />
         <meta name="twitter:creator" content={metadata.twitter.creator} />
         <meta name="twitter:image" content={metadata.twitter.images[0]} />
+
+        <meta name="msvalidate.01" content="25C73F122D81094B083C3CA4BF236676" />
+
       </head>
       <body>
         <AppProviders>{children}</AppProviders>
