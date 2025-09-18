@@ -55,6 +55,8 @@ export default function RootLayout({ children }) {
         {/* Bing Webmaster Tools Verification */}
         <meta name="msvalidate.01" content="25C73F122D81094B083C3CA4BF236676" />
 
+        <meta name="google-site-verification" content="bWxu6a938CoP1F7xusHiIRKLHgLL5w-O0NsEKDuFbtw" />
+
         {/* Favicon (add if you have one) */}
         {/* <link rel="icon" href="/favicon.ico" /> */}
       </head>
