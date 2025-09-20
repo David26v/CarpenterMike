@@ -17,7 +17,7 @@ export const siteData = {
     title:
       "Complete Remodeling, Renovations & Makeovers — Residential & Commercial Interior.",
     subtitle:
-      "With over 30 years of experience, I’ve completed remodels, renovations, and makeovers across both residential and commercial spaces. From kitchens and bathrooms to custom woodworking and office interiors, I create practical, reliable solutions that fit your vision and budget. Take a look at some of my completed projects below.",
+      "With over 30 years of experience, I’ve worked on remodels, renovations, and makeovers for both homes and businesses. From kitchens and bathrooms to custom woodworking and office interiors, I handle the work myself and make sure it’s done right",
     backgroundImage: "/images/hero-remodeling.png",
     ctaButtons: [
       { text: "Login to View Projects", action: "login", primary: true },

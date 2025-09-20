@@ -1,179 +1,153 @@
 import { Home, Ruler, Hammer, Wrench, Shield } from "lucide-react";
 
+// Use generic woodwork images - should be replaced with Mike's actual work photos
 const woodworkImages = [
-    { 
-      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80", 
-      alt: "Built-in Bookcase and Entertainment Center",
-      title: "Built-in Entertainment Center"
-    },
-    { 
-      src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80", 
-      alt: "Custom Kitchen Cabinets",
-      title: "Custom Kitchen Cabinets"
-    },
-    { 
-      src: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80", 
-      alt: "Built-in Shelving Unit",
-      title: "Custom Built-in Shelving"
-    },
-    { 
-      src: "https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2061&q=80", 
-      alt: "Custom Closet System",
-      title: "Walk-in Closet System"
-    },
-  ];
+  {
+    src: "/gallery/AkiKitchenMakeover/aki8.jpg",
+    alt: "Built-in storage solutions Kelowna - custom woodwork and cabinetry by Carpenter Mike",
+    title: "Built-in Storage"
+  },
+  {
+    src: "/gallery/Ashworth_Kitchen_Makeover/IMG_5182.jpg",
+    alt: "Custom cabinet installation Kelowna - handcrafted kitchen cabinets and millwork",
+    title: "Custom Cabinet Work"
+  },
+  {
+    src: "/gallery/Ashworth_Kitchen_Makeover/IMG_5500.jpg",
+    alt: "Custom shelving Kelowna BC - built-in bookcase and storage solutions",
+    title: "Custom Shelving"
+  },
+  {
+    src: "/gallery/Ashworth_Kitchen_Makeover/IMG_7027.jpg",
+    alt: "Storage solutions Kelowna - custom woodwork and organizational systems",
+    title: "Storage Solutions"
+  },
+];
 
-  const beforeAfterImages = [
-    { 
-      before: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80",
-      after: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      title: "Built-in Entertainment Center",
-      description: "From empty wall space to stunning custom built-in with integrated lighting"
-    },
-    { 
-      before: "https://images.unsplash.com/photo-1549497538-303791108f95?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2061&q=80",
-      after: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80",
-      title: "Custom Closet Organization",
-      description: "Transformed chaotic closet into organized storage solution"
-    },
-  ];
+const beforeAfterImages = [
+  {
+    before: "/gallery/Elizabeth_Kitchen_Makeover/Before 1.jpeg",
+    after: "/gallery/Elizabeth_Kitchen_Makeover/IMG_7914.jpg",
+    title: "Elizabeth's Complete Kitchen Transformation - Kelowna",
+    description: "Complete kitchen renovation featuring new cabinets, modern countertops, and improved lighting. This Kelowna kitchen makeover transformed an outdated space into a functional, beautiful cooking area with quality craftsmanship and attention to detail.",
+  },
+  {
+    before: "/gallery/AkiKitchenMakeover/aki1.jpg",
+    after: "/gallery/AkiKitchenMakeover/aki12.jpg",
+    title: "Aki's Custom Kitchen Cabinet Project - Kelowna",
+    description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Kelowna custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
+  },
+];
 
+
+  // Simplified, honest process description
   const processes = [
     {
       step: "1",
-      title: "Design Consultation & Measurement",
-      desc: "I visit your home to understand your storage needs, take precise measurements, and create custom design solutions that fit your space perfectly.",
+      title: "Consultation & Assessment",
+      desc: "I visit your home to understand your needs, take measurements, and discuss design possibilities within your budget.",
       duration: "1-2 hours",
       icon: Home,
       details: [
-        "Comprehensive space assessment and measurement",
-        "Discussion of storage needs and functionality",
-        "Style preferences and wood type selection",
-        "Budget planning and timeline discussion",
-        "Initial sketches and design concepts"
+        "Space assessment and measurements",
+        "Discussion of your storage needs",
+        "Wood type and style preferences",
+        "Budget planning and timeline"
       ]
     },
     {
       step: "2", 
-      title: "Design Refinement & Planning",
-      desc: "I create detailed drawings and select materials. We refine the design until it's perfect, ensuring every detail meets your needs and vision.",
+      title: "Design & Planning",
+      desc: "I create a design plan and select materials that work for your space and needs.",
       duration: "3-5 days",
       icon: Ruler,
       details: [
-        "Detailed technical drawings and specifications",
-        "Wood species and finish selection",
-        "Hardware and accent choices",
-        "Integration with existing room elements",
-        "Final cost estimates and material ordering"
+        "Design planning and sketches",
+        "Wood selection and material sourcing",
+        "Hardware choices",
+        "Cost estimates and timeline"
       ]
     },
     {
       step: "3",
-      title: "Material Preparation & Crafting", 
-      desc: "I carefully select and prepare all materials in my workshop, ensuring quality and precision in every cut, joint, and detail.",
+      title: "Crafting & Preparation", 
+      desc: "I carefully prepare and craft all pieces with attention to quality and detail.",
       duration: "1-2 weeks",
       icon: Hammer,
       details: [
-        "Premium wood selection and preparation",
-        "Precision cutting and joinery work",
-        "Pre-finishing and quality control",
-        "Hardware preparation and fitting",
-        "Custom detail work and craftsmanship"
+        "Quality wood preparation",
+        "Precision cutting and joinery",
+        "Pre-finishing work",
+        "Hardware preparation"
       ]
     },
     {
       step: "4",
-      title: "Professional Installation",
-      desc: "Careful installation in your home with attention to protecting your space. Every piece is fitted precisely and finished to perfection.",
+      title: "Installation",
+      desc: "Professional installation in your home with care to protect your space.",
       duration: "1-3 days",
       icon: Wrench,
       details: [
         "Protection of surrounding areas",
-        "Precise fitting and installation",
-        "Final sanding and finishing touches",
-        "Hardware installation and adjustment",
-        "Integration with electrical if needed"
+        "Precise installation",
+        "Final finishing touches",
+        "Hardware installation"
       ]
     },
     {
       step: "5",
-      title: "Final Inspection & Care Instructions",
-      desc: "Complete walkthrough to ensure everything meets our high standards, plus detailed care instructions to keep your woodwork beautiful for years.",
+      title: "Final Inspection",
+      desc: "Complete walkthrough to ensure quality and your satisfaction.",
       duration: "30 minutes",
       icon: Shield,
       details: [
-        "Complete quality inspection",
-        "Function testing and adjustments",
-        "Wood care and maintenance instructions",
-        "Warranty documentation", 
-        "Final cleanup and project completion"
+        "Quality inspection",
+        "Function testing",
+        "Care instructions",
+        "Project completion"
       ]
     }
   ];
 
+  // Realistic service list - only what Mike actually does
   const services = [
-    "Built-in bookcases and entertainment centers",
-    "Custom closet organization systems", 
-    "Window seats with storage compartments",
-    "Floating shelves and wall-mounted units",
-    "Home office built-ins and desk solutions",
-    "Mudroom storage benches and cubbies",
-    "Custom trim work and crown molding",
-    "Kitchen and bathroom cabinet refacing",
-    "Furniture restoration and refinishing",
-    "Custom mantels and fireplace surrounds",
-    "Walk-in pantry shelving systems",
-    "Bedroom built-in wardrobes and dressers"
+    "Custom cabinets and built-ins",
+    "Pantry units and storage solutions", 
+    "Stair railings and trim work",
+    "Custom shelving and bookcases",
+    "Kitchen and bathroom cabinet work",
+    "Storage benches and window seats",
+    "Custom trim and molding",
+    "Furniture repair and refinishing",
+    "General carpentry and woodwork"
   ];
 
-  const testimonials = [
-    {
-      text: "Mike built us the most beautiful built-in entertainment center. The craftsmanship is exceptional and it fits our room perfectly. It looks like it was always meant to be there!",
-      author: "Patricia & James Miller",
-      rating: 5,
-      project: "Built-in Entertainment Center",
-      location: "Kelowna, BC"
-    },
-    {
-      text: "Our custom closet system has transformed our bedroom. Mike's attention to detail and quality workmanship exceeded our expectations. Highly recommended!",
-      author: "Sandra Thompson", 
-      rating: 5,
-      project: "Walk-in Closet System",
-      location: "Kelowna, BC"
-    },
-    {
-      text: "Mike restored our antique dining table to like-new condition. His knowledge of wood and finishing techniques is impressive. The table looks amazing!",
-      author: "Michael Davis",
-      rating: 5,
-      project: "Furniture Restoration", 
-      location: "Kelowna, BC"
-    }
-  ];
+  
 
   const faqs = [
     {
       q: "What types of wood do you work with?",
-      a: "I work with a wide variety of woods including oak, maple, cherry, pine, cedar, and exotic species. I'll help you select the best wood for your project based on durability, appearance, and budget."
+      a: "I work with a variety of woods including oak, pine, cedar, and other species. I'll help you select the best wood for your project based on your needs and budget."
     },
     {
-      q: "Can you match existing woodwork in my home?",
-      a: "Yes, I can match existing trim, cabinets, or furniture. I'll bring samples to ensure a perfect match in both wood species and finish."
+      q: "Can you match existing woodwork?",
+      a: "Yes, I can work to match existing trim, cabinets, or furniture. I'll assess what's needed to achieve a good match."
     },
     {
-      q: "Do you provide design services or do I need plans?",
-      a: "I provide complete design services. I'll create custom designs based on your needs, space, and style preferences. No need to have plans - I handle everything from concept to completion."
+      q: "Do you provide design services?",
+      a: "I provide design assistance based on your space and needs. I'll work with you to create a plan that fits your requirements and budget."
     },
     {
-      q: "How long do custom woodwork projects typically take?",
-      a: "Timeline varies by project complexity. Simple shelving might take 1-2 weeks, while elaborate built-ins can take 3-4 weeks. I'll provide a detailed timeline during consultation."
+      q: "How long do woodwork projects take?",
+      a: "Timeline varies by project complexity. Simple projects might take 1-2 weeks, while more elaborate work can take 3-4 weeks. I'll provide a timeline during consultation."
     },
     {
-      q: "Do you offer warranties on your woodwork?",
-      a: "Yes, all my custom woodwork comes with a 2-year warranty on craftsmanship. I stand behind every project and will address any issues that arise."
+      q: "What's your warranty policy?",
+      a: "I stand behind my craftsmanship and will address any issues that arise. We'll discuss warranty details during our consultation."
     },
     {
-      q: "Can you work around my schedule and minimize disruption?",
-      a: "Absolutely. Most of the work is done in my workshop, with minimal time needed in your home for installation. I work around your schedule and protect your living space."
+      q: "Can you work around my schedule?",
+      a: "Yes, I work to minimize disruption. Most crafting is done off-site, with installation scheduled around your convenience."
     }
   ];
 
@@ -182,6 +156,5 @@ const woodworkImages = [
     beforeAfterImages,
     processes,
     services,
-    testimonials,
     faqs
   }

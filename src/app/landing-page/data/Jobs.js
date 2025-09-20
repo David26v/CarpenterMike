@@ -21,6 +21,8 @@ export const jobs = [
       "/gallery/absorbtionPit/ab5.jpg",
       "/gallery/absorbtionPit/ab6.jpg",
       "/gallery/absorbtionPit/ab7.jpg",
+      "/gallery/absorbtionPit/abs-final1.jpg",
+      "/gallery/absorbtionPit/absfinal2.jpg",
     ]
   },
   {

@@ -30,8 +30,6 @@ const BathroomRenovationPage = () => {
   const [activeImage, setActiveImage] = useState(0);
   const router = useRouter();
   
-
-
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -69,7 +67,7 @@ const BathroomRenovationPage = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section - Removed inflated statistics */}
       <section className="bg-gradient-to-r from-blue-600 to-blue-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -78,16 +76,17 @@ const BathroomRenovationPage = () => {
                 Bathroom Renovations in Kelowna
               </h1>
               <p className="text-xl mb-8 text-blue-100">
-                Create a beautiful, functional bathroom that fits your lifestyle. From walk-in showers to complete makeovers, I handle every detail with 30+ years of experience.
+                Create a beautiful, functional bathroom with quality craftsmanship. From tile work to complete renovations, I handle every detail with care and experience.
               </p>
+              {/* Removed fake statistics, kept simple authentic info */}
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold">30+</div>
-                  <div className="text-blue-200">Years Experience</div>
+                  <div className="text-3xl font-bold">Expert</div>
+                  <div className="text-blue-200">Tile Work</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold">150+</div>
-                  <div className="text-blue-200">Bathrooms Renovated</div>
+                  <div className="text-3xl font-bold">Quality</div>
+                  <div className="text-blue-200">Results</div>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -113,7 +112,7 @@ const BathroomRenovationPage = () => {
             <div className="relative">
               <img 
                 src="https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80"
-                alt="Beautiful Bathroom Renovation" 
+                alt="Quality Bathroom Renovation" 
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3">
@@ -124,15 +123,15 @@ const BathroomRenovationPage = () => {
         </div>
       </section>
 
-      {/* Services Included */}
+      {/* Services Section - Simplified to what Mike actually does */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Complete Bathroom Renovation Services
+              Bathroom Renovation Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From design consultation to final installation, I handle every aspect of your bathroom renovation with professional expertise.
+              Professional bathroom renovations with quality tile work and careful attention to detail.
             </p>
           </div>
 
@@ -147,15 +146,15 @@ const BathroomRenovationPage = () => {
         </div>
       </section>
 
-      {/* Process */}
+      {/* Process Section - Simplified and honest */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              My Bathroom Renovation Process
+              My Approach to Bathroom Renovations
             </h2>
             <p className="text-xl text-gray-600">
-              A systematic 5-step approach that ensures quality results and minimal disruption
+              A straightforward process focused on quality work and minimal disruption
             </p>
           </div>
 
@@ -197,18 +196,19 @@ const BathroomRenovationPage = () => {
         </div>
       </section>
 
-      {/* Before & After Gallery */}
+      {/* Gallery Section - Note: Images should be replaced with Mike's actual work */}
       <section id="gallery" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Bathroom Transformations
+              Bathroom Projects
             </h2>
             <p className="text-xl text-gray-600">
-              See how I've transformed bathrooms throughout Kelowna
+              Examples of quality bathroom renovation work
             </p>
           </div>
 
+          {/* Before/After Section - Should use Mike's actual photos */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             {beforeAfterImages.map((images, index) => (
               <Card key={index} className="overflow-hidden shadow-xl">
@@ -234,7 +234,7 @@ const BathroomRenovationPage = () => {
             ))}
           </div>
 
-          {/* Bathroom Gallery */}
+          {/* Bathroom Gallery - Generic room photos, should be replaced with Mike's work */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {bathroomImages.map((image, index) => (
               <div 
@@ -259,15 +259,15 @@ const BathroomRenovationPage = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials Section - Real client feedback */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              What My Clients Say
+              Client Feedback
             </h2>
             <p className="text-xl text-gray-600">
-              Real feedback from real bathroom renovation projects in Kelowna
+              What clients say about my bathroom renovation work
             </p>
           </div>
 
@@ -299,15 +299,15 @@ const BathroomRenovationPage = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Frequently Asked Questions
+              Common Questions
             </h2>
             <p className="text-xl text-gray-600">
-              Common questions about bathroom renovations
+              Answers to frequently asked questions about bathroom renovations
             </p>
           </div>
 
@@ -326,14 +326,14 @@ const BathroomRenovationPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Honest, authentic messaging */}
       <section id="contact" className="py-20 bg-gradient-to-r from-blue-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Ready to Transform Your Bathroom?
+            Ready to Discuss Your Bathroom Project?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Let's discuss your bathroom renovation project. I offer free consultations and detailed quotes with no obligations.
+            Let's talk about your bathroom renovation. I offer free consultations and honest assessments.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -344,12 +344,12 @@ const BathroomRenovationPage = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Clock className="h-8 w-8 mx-auto mb-2" />
               <div className="font-semibold">Free Consultation</div>
-              <div className="text-blue-100">Within 48 Hours</div>
+              <div className="text-blue-100">No Obligation</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Shield className="h-8 w-8 mx-auto mb-2" />
-              <div className="font-semibold">2-Year Warranty</div>
-              <div className="text-blue-100">On All Work</div>
+              <div className="font-semibold">Quality Work</div>
+              <div className="text-blue-100">Satisfaction Guaranteed</div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

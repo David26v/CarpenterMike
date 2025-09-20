@@ -3,28 +3,20 @@
 import React, { useState, useEffect } from "react";
 
 // shadcn Components
-import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardFooter,
-  CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
 import {
-  Menu,
-  X,
   Phone,
   Star,
   ArrowRight,
   Eye,
-  Crown,
-  Hammer,
-  Home,
-  CheckCircleIcon,
 } from "lucide-react";
 import { jobs } from "./data/Jobs";
 import { siteData } from "./data/siteData";
@@ -154,7 +146,7 @@ const CarpenterPortfolio = () => {
               className="absolute inset-0 bg-cover bg-center opacity-40"
             >
               <Image 
-                src='/images/hero-remodeling.png'
+                src='/images/remade.png'
                 alt="Carpenter Mike Remodeling"
                 fill
                 style={{ objectFit: 'cover' }}

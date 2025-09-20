@@ -18,12 +18,11 @@ import { useRouter } from 'next/navigation';
 import Footer from '../landing-page/components/Footer';
 import { siteData } from '../landing-page/data/siteData';
 import { services, processes, woodworkImages, beforeAfterImages, testimonials, faqs } from '../data/CustomWoodWorkData';
+import { woodworkTestimonials } from '../data/TestimonialsData';
 
 const CustomWoodworkPage = () => {
   const [activeImage, setActiveImage] = useState(0);
   const router = useRouter();
-  
-
 
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId);
@@ -40,7 +39,7 @@ const CustomWoodworkPage = () => {
           <div className="flex justify-between items-center h-16">
             <Button 
               variant="ghost" 
-              onClick={() => router.back()}
+              onClick={() => router.push('/')}
               className="text-gray-600 hover:text-gray-900"
             >
               <ArrowLeft className="h-4 w-4 mr-2" />
@@ -62,7 +61,7 @@ const CustomWoodworkPage = () => {
         </div>
       </nav>
 
-      {/* Hero Section */}
+      {/* Hero Section - Removed inflated statistics */}
       <section className="bg-gradient-to-r from-green-600 to-green-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -71,16 +70,17 @@ const CustomWoodworkPage = () => {
                 Custom Woodwork in Kelowna
               </h1>
               <p className="text-xl mb-8 text-green-100">
-                Handcrafted wooden features that maximize space and add character to your home. From built-ins to custom furniture, every piece is made to fit perfectly.
+                Quality custom woodwork and built-ins that maximize space and add character to your home. From cabinets to storage solutions, every piece is crafted with care.
               </p>
+              {/* Removed fake statistics, kept simple authentic info */}
               <div className="grid grid-cols-2 gap-4 mb-8">
                 <div className="text-center">
-                  <div className="text-3xl font-bold">30+</div>
-                  <div className="text-green-200">Years Experience</div>
+                  <div className="text-3xl font-bold">Custom</div>
+                  <div className="text-green-200">Craftsmanship</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold">500+</div>
-                  <div className="text-green-200">Custom Pieces</div>
+                  <div className="text-3xl font-bold">Quality</div>
+                  <div className="text-green-200">Materials</div>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -103,9 +103,9 @@ const CustomWoodworkPage = () => {
               </div>
             </div>
             <div className="relative">
-              <img 
-                src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2058&q=80"
-                alt="Beautiful Custom Woodwork" 
+              <img
+                src= "/gallery/Ashworth_Tile_Job/IMG_5193.jpg"
+                alt="Quality Custom Woodwork" 
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
               <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm rounded-full p-3">
@@ -116,7 +116,7 @@ const CustomWoodworkPage = () => {
         </div>
       </section>
 
-      {/* Services Included */}
+      {/* Services Section - Simplified to what Mike actually does */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
@@ -124,7 +124,7 @@ const CustomWoodworkPage = () => {
               Custom Woodwork Services
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From design to installation, I create custom wooden features that are built to last and perfectly suited to your home.
+              Quality custom woodwork and built-ins designed to fit your space and needs perfectly.
             </p>
           </div>
 
@@ -139,15 +139,15 @@ const CustomWoodworkPage = () => {
         </div>
       </section>
 
-      {/* Process */}
+      {/* Process Section - Simplified and honest */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              My Custom Woodwork Process
+              My Approach to Custom Woodwork
             </h2>
             <p className="text-xl text-gray-600">
-              A meticulous 5-step process that ensures every piece is crafted to perfection
+              A careful process focused on quality craftsmanship and your satisfaction
             </p>
           </div>
 
@@ -189,18 +189,19 @@ const CustomWoodworkPage = () => {
         </div>
       </section>
 
-      {/* Before & After Gallery */}
+      {/* Gallery Section - Note: Images should be replaced with Mike's actual work */}
       <section id="gallery" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Custom Woodwork Transformations
+              Custom Woodwork Projects
             </h2>
             <p className="text-xl text-gray-600">
-              See how custom woodwork has transformed homes throughout Kelowna
+              Examples of quality custom woodwork and built-in projects
             </p>
           </div>
 
+          {/* Before/After Section - Should use Mike's actual photos */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             {beforeAfterImages.map((images, index) => (
               <Card key={index} className="overflow-hidden shadow-xl">
@@ -226,7 +227,7 @@ const CustomWoodworkPage = () => {
             ))}
           </div>
 
-          {/* Woodwork Gallery */}
+          {/* Woodwork Gallery - Generic photos, should be replaced with Mike's work */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {woodworkImages.map((image, index) => (
               <div 
@@ -251,20 +252,20 @@ const CustomWoodworkPage = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
+      {/* Testimonials Section - Real client feedback */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              What My Clients Say
+              Client Feedback
             </h2>
             <p className="text-xl text-gray-600">
-              Real feedback from real custom woodwork projects in Kelowna
+              What clients say about my custom woodwork projects
             </p>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
+            {woodworkTestimonials.map((testimonial, index) => (
               <Card key={index} className="bg-white border-gray-200 shadow-lg">
                 <CardHeader>
                   <div className="flex items-center justify-between mb-4">
@@ -291,15 +292,15 @@ const CustomWoodworkPage = () => {
         </div>
       </section>
 
-      {/* FAQ */}
+      {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Frequently Asked Questions
+              Common Questions
             </h2>
             <p className="text-xl text-gray-600">
-              Common questions about custom woodwork
+              Answers to frequently asked questions about custom woodwork
             </p>
           </div>
 
@@ -318,14 +319,14 @@ const CustomWoodworkPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - Honest, authentic messaging */}
       <section id="contact" className="py-20 bg-gradient-to-r from-green-600 to-green-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Ready for Custom Woodwork?
+            Ready to Discuss Your Woodwork Project?
           </h2>
           <p className="text-xl mb-8 text-green-100">
-            Let's discuss your custom woodwork project. I offer free consultations and detailed quotes with no obligations.
+            Let's talk about your custom woodwork needs. I offer free consultations and honest assessments.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
@@ -336,26 +337,23 @@ const CustomWoodworkPage = () => {
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Clock className="h-8 w-8 mx-auto mb-2" />
               <div className="font-semibold">Free Consultation</div>
-              <div className="text-green-100">Within 48 Hours</div>
+              <div className="text-green-100">No Obligation</div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4">
               <Shield className="h-8 w-8 mx-auto mb-2" />
-              <div className="font-semibold">2-Year Warranty</div>
-              <div className="text-green-100">On All Work</div>
+              <div className="font-semibold">Quality Work</div>
+              <div className="text-green-100">Satisfaction Guaranteed</div>
             </div>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               size="lg" 
               className="bg-white text-green-600 hover:bg-green-50"
-              onClick= {()=>{
-                router.push('/#contact')
-              }}
+              onClick={() => router.push('/#contact')}
             >
               <Phone className="h-5 w-5 mr-2" />
               Contact Me
             </Button>
-            
           </div>
         </div>
       </section>

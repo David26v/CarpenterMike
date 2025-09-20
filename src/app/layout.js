@@ -57,8 +57,6 @@ export default function RootLayout({ children }) {
 
         <meta name="google-site-verification" content="bWxu6a938CoP1F7xusHiIRKLHgLL5w-O0NsEKDuFbtw" />
 
-        {/* Favicon (add if you have one) */}
-        {/* <link rel="icon" href="/favicon.ico" /> */}
       </head>
       <body>
         <AppProviders>{children}</AppProviders>
