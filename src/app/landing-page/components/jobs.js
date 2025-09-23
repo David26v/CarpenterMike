@@ -10,7 +10,7 @@ import {
   } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { Menu, X, Phone, Mail, MapPin, Star, ArrowRight, CheckCircle, Eye, Shield, Crown, Sparkles, Diamond, Search, Filter, Grid } from 'lucide-react';
+import { X, Star, ArrowRight,Eye, Search, Filter, Grid } from 'lucide-react';
 
 const JobsDone = (props) => {
     const { jobs, NavigateToDetailed } = props;

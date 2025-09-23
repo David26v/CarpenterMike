@@ -8,34 +8,36 @@ import {
 
 export const bathroomImages = [
   {
-    src: "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    alt: "Modern bathroom renovation Kelowna - walk-in shower and tile work by Carpenter Mike",
-    title: "Modern Bathroom Design"
+    src: "/gallery/Tatiana-Vanity-Bathroom/tatian-bathroom.jpg",
+    alt: "Modern bathroom renovation in Kelowna with custom walk-in shower, tile work, and sleek finishes by Carpenter Mike",
+    title: "Modern Bathroom Design - Kelowna"
   },
   {
-    src: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    alt: "Custom bathroom vanity installation Kelowna - professional bathroom remodeling",
-    title: "Custom Vanity Work"
+    src: "/gallery/Tatiana-Vanity-Bathroom/IMG_5038.jpg",
+    alt: "Custom bathroom vanity installation in Kelowna - professional bathroom remodeling and storage solutions",
+    title: "Custom Vanity Installation"
   },
   {
-    src: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    alt: "Bathroom renovation Kelowna BC - complete bathroom remodel with quality fixtures",
-    title: "Bathroom Remodel"
+    src: "/gallery/Tatiana-Vanity-Bathroom/IMG_5550.jpg",
+    alt: "Complete bathroom remodel in Kelowna, BC featuring new vanity, updated fixtures, and high-quality tile work",
+    title: "Full Bathroom Remodel"
   },
   {
-    src: "https://images.unsplash.com/photo-1556909114-7724cd7be22e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-    alt: "Custom tile installation Kelowna - expert bathroom tile work and waterproofing",
-    title: "Custom Tile Installation"
+    src: "/gallery/Ashworth_Tile_Job/IMG_4002.jpg",
+    alt: "Expert bathroom tile installation and waterproofing in Kelowna - custom tile design for long-lasting results",
+    title: "Custom Tile Installation - Kelowna"
   },
 ];
+
 export const beforeAfterImages = [
-    { 
-      before: "https://images.unsplash.com/photo-1505691723518-36a5ac3be353?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-      after: "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-      title: "Bathroom Transformation",
-      description: "Complete bathroom renovation with quality tile work and professional installation"
-    },
-  ];
+  { 
+    before: "/gallery/Tatiana-Vanity-Bathroom/IMG_5038.jpg",
+    after: "/gallery/Tatiana-Vanity-Bathroom/IMG_5550.jpg",
+    url:'/landing-page/23',
+    title: "Custom Bathroom Vanity Renovation - Kelowna Before & After",
+    description: "Stunning bathroom vanity renovation in Kelowna featuring a modern design, upgraded fixtures, quality tile work, and professional installation."
+  },
+];
 
   export const processes = [
     {

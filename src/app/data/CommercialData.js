@@ -35,10 +35,25 @@ const beforeAfterImages = [
     before: "/gallery/Ashworth_Tile_Job/IMG_4140.jpg",
     after: "/gallery/Ashworth_Tile_Job/IMG_4141.jpg",
     title: "Ashworth Commercial Tile Installation - Kelowna",
+    url:'/landing-page/7',
     description: "Professional commercial tile installation featuring expert craftsmanship, quality materials, and precise installation. This Kelowna commercial project demonstrates professional tile work for business environments.",
   },
+  {
+    before:  "/gallery/Wellness-Spa/IMG_7300.jpg",
+    after:    "/gallery/Wellness-Spa/IMG_8072.jpg",
+    url:'/landing-page/28',
+    title: "Wellness Spa Interior Makeover",
+    description:  "Complete wellness spa build with sauna, shower, relaxation area, and premium wood finishes.",
+  },
+  {
+    before:    "/gallery/Baskins-Robbins-Repair/IMG_8269.jpg",
+    after:    "/gallery/Wellness-Spa/IMG_8072.jpg",
+    url:'/landing-page/8',
+    title: "Baskins-Robbins Repair -Las Vegas",
+    description:  "Complete wellness spa build with sauna, shower, relaxation area, and premium wood finishes.",
+  },
 ];
-// Simplified, honest process description
+
 const processes = [
   {
     step: "1",

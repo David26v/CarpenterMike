@@ -28,15 +28,32 @@ const beforeAfterImages = [
   {
     before: "/gallery/Ashworth_Hood/IMG_5523.jpg",
     after: "/gallery/Ashworth_Hood/IMG_5670.jpg",
+    url:'/landing-page/5',
     title: "Ashworth Custom Hood Installation Project - Kelowna",
     description: "Professional custom hood installation featuring structural reinforcement, precise fitting, and quality finish work. This Kelowna home improvement project upgraded kitchen ventilation while enhancing the overall aesthetic and functionality of the space.",
   },
   {
     before: "/gallery/Elizabeth_Kitchen_Makeover/Before 1.jpeg",
-    after: "/gallery/Elizabeth_Kitchen_Makeover/IMG_7913.jpg",
-    title: "Elizabeth's Complete Kitchen Makeover - Kelowna",
-    description: "Comprehensive kitchen renovation transforming an outdated layout into a modern, functional cooking space. This Kelowna kitchen makeover included new cabinetry, upgraded countertops, improved lighting, and enhanced storage solutions for maximum efficiency and visual appeal.",
+    after: "/gallery/Elizabeth_Kitchen_Makeover/IMG_7914.jpg",
+    title: "Elizabeth's Complete Kitchen Transformation - Kelowna",
+    description: "Complete kitchen renovation featuring new cabinets, modern countertops, and improved lighting. This Kelowna kitchen makeover transformed an outdated space into a functional, beautiful cooking area with quality craftsmanship and attention to detail.",
+    url:'/landing-page/9'
   },
+  {
+    before: "/gallery/Tatina-Guest-Bedroom/IMG_5315.jpg",
+    title: "Tatina's Guest Bedroom Renovation - Kelowna",
+    after: "/gallery/Tatina-Guest-Bedroom/IMG_5375.jpg",
+    url: "/landing-page/21",
+    description: "Stylish guest bedroom renovation in Kelowna featuring built-in storage, custom lighting, and modern finishes for a functional, upgraded space."
+  },
+  {
+    before:  "/gallery/absorbtionPit/Before.jpg",
+    title: "Absorbtion Pit- Kelowna",
+    after:  "/gallery/absorbtionPit/absfinal2.jpg",
+    url: "/landing-page/1",
+    description: "Professional installation of an absorption pit for drainage and water management, built to last with durable materials and precise engineering."
+  }
+  
 ];
 
 // Simplified, honest process description

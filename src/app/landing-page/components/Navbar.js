@@ -25,7 +25,7 @@ const Navbar = (props) => {
           <div className="relative">
             <div className="absolute inset-0 bg-gradient-to-r from-amber-400 to-orange-500 rounded-2xl blur-xl opacity-50 group-hover:opacity-80 transition-all duration-500 animate-pulse"></div>
             <div className="relative bg-gradient-to-r from-amber-500 to-orange-600 p-3 rounded-2xl group-hover:scale-110 transition-all duration-500 shadow-2xl">
-              <Crown className="h-8 w-8 text-white" />
+              <siteData.branding.logo.icon className="h-8 w-8 text-white" />
             </div>
           </div>
           <div className="ml-4">

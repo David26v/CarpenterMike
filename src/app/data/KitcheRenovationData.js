@@ -34,12 +34,28 @@ const beforeAfterImages = [
     after: "/gallery/Elizabeth_Kitchen_Makeover/IMG_7914.jpg",
     title: "Elizabeth's Complete Kitchen Transformation - Kelowna",
     description: "Complete kitchen renovation featuring new cabinets, modern countertops, and improved lighting. This Kelowna kitchen makeover transformed an outdated space into a functional, beautiful cooking area with quality craftsmanship and attention to detail.",
+    url:'/landing-page/9'
   },
   {
     before: "/gallery/AkiKitchenMakeover/aki1.jpg",
     after: "/gallery/AkiKitchenMakeover/aki12.jpg",
+    url:'/landing-page/2',
     title: "Aki's Custom Kitchen Cabinet Project - Kelowna",
     description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Kelowna custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
+  },
+  {
+    before: "/gallery/Ashworth_Kitchen_Makeover/IMG_3921.jpg",
+    after:  "/gallery/Ashworth_Kitchen_Makeover/IMG_5500.jpg",
+    url:'/landing-page/6',
+    title: "Ashworth Kitchen Makeover - Kelowna",
+    description: "Professional commercial tile installation featuring expert craftsmanship, quality materials, and precise installation. This Kelowna commercial project demonstrates professional tile work for business environments.",
+  },
+  {
+    before: "/gallery/Ashworth_Hood/IMG_5523.jpg",
+    after: "/gallery/Ashworth_Hood/IMG_5670.jpg",
+    url:'/landing-page/5',
+    title: "Ashworth Custom Hood Installation Project - Kelowna",
+    description: "Professional custom hood installation featuring structural reinforcement, precise fitting, and quality finish work. This Kelowna home improvement project upgraded kitchen ventilation while enhancing the overall aesthetic and functionality of the space.",
   },
 ];
 

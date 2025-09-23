@@ -30,10 +30,12 @@ const beforeAfterImages = [
     after: "/gallery/Elizabeth_Kitchen_Makeover/IMG_7914.jpg",
     title: "Elizabeth's Complete Kitchen Transformation - Kelowna",
     description: "Complete kitchen renovation featuring new cabinets, modern countertops, and improved lighting. This Kelowna kitchen makeover transformed an outdated space into a functional, beautiful cooking area with quality craftsmanship and attention to detail.",
+    url:'/landing-page/9'
   },
   {
     before: "/gallery/AkiKitchenMakeover/aki1.jpg",
     after: "/gallery/AkiKitchenMakeover/aki12.jpg",
+    url:'/landing-page/2',
     title: "Aki's Custom Kitchen Cabinet Project - Kelowna",
     description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Kelowna custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
   },

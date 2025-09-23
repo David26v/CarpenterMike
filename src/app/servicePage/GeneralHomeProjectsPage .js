@@ -11,6 +11,10 @@ import {
   Image,
   Shield,
   PhoneCall,
+  Eye,
+  ZoomIn,
+  MousePointer,
+  ArrowRight
 } from 'lucide-react';
 
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -112,7 +116,7 @@ const GeneralHomeProjectsPage = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+                src= "/gallery/Tatina-Guest-Bedroom/IMG_5333.jpg"
                 alt="Quality Home Improvement" 
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />
@@ -197,61 +201,120 @@ const GeneralHomeProjectsPage = () => {
         </div>
       </section>
 
-      {/* Gallery Section - Note: Images should be replaced with Mike's actual work */}
       <section id="gallery" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Home Project Examples
+              General Homes Projects
             </h2>
             <p className="text-xl text-gray-600">
-              Examples of quality home improvement work
+              Examples of General home repairs 
             </p>
           </div>
 
-          {/* Before/After Section - Should use Mike's actual photos */}
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
             {beforeAfterImages.map((images, index) => (
-              <Card key={index} className="overflow-hidden shadow-xl">
-                <div className="grid grid-cols-2">
-                  <div className="relative">
-                    <img src={images.before} alt="Before project" className="w-full h-64 object-cover" />
-                    <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+              <Card
+                key={index}
+                className="overflow-hidden shadow-xl cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
+                onClick={() => {
+                  if (images.url) {
+                    window.open(images.url, '_blank');
+                  } else {
+                    setActiveImage(index);
+                  }
+                }}
+              >
+                <div className="grid grid-cols-2 relative">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={images.before}
+                      alt="Before renovation"
+                      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                       Before
                     </div>
+                    {/* Hover overlay for before image */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                      <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Eye className="h-6 w-6 mx-auto" />
+                      </div>
+                    </div>
                   </div>
-                  <div className="relative">
-                    <img src={images.after} alt="After project" className="w-full h-64 object-cover" />
-                    <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="relative overflow-hidden">
+                    <img
+                      src={images.after}
+                      alt="After renovation"
+                      className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                    <div className="absolute top-4 left-4 bg-green-600 text-white px-3 py-1 rounded-full text-sm font-semibold shadow-lg">
                       After
+                    </div>
+                    {/* Hover overlay for after image */}
+                    <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
+                      <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                        <Eye className="h-6 w-6 mx-auto" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Click indicator overlay */}
+                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 flex items-center justify-center">
+                    <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100 shadow-lg">
+                      <ZoomIn className="h-6 w-6 text-gray-700" />
                     </div>
                   </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{images.title}</h3>
-                  <p className="text-gray-600">{images.description}</p>
+
+                <CardContent className="p-6 relative">
+                  <h3 className="text-xl font-semibold mb-2 group-hover:text-blue-600 transition-colors duration-300">
+                    {images.title}
+                  </h3>
+                  <p className="text-gray-600 mb-4">{images.description}</p>
+
+                  {/* Click to view indicator */}
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center text-sm text-gray-500">
+                      <MousePointer className="h-4 w-4 mr-1" />
+                      Click to View More Pictures
+                    </div>
+                    <div className="flex items-center text-blue-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <span className="text-sm font-medium">View Project</span>
+                      <ArrowRight className="h-4 w-4 ml-1" />
+                    </div>
+                  </div>
                 </CardContent>
               </Card>
             ))}
           </div>
 
-          {/* Project Gallery - Generic photos, should be replaced with Mike's work */}
+          {/* Kitchen Gallery - Enhanced with better hover effects */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {homeProjectImages.map((image, index) => (
-              <div 
-                key={index} 
-                className="relative group cursor-pointer overflow-hidden rounded-xl"
-                onClick={() => setActiveImage(index)}
+              <div
+                key={index}
+                className="relative group cursor-pointer overflow-hidden rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                onClick={() => setActiveImage(index + beforeAfterImages.length)}
               >
-                <img 
-                  src={image.src} 
-                  alt={image.alt} 
-                  className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+                <img
+                  src={image.src}
+                  alt={image.alt}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-300 flex items-center justify-center">
-                  <div className="text-white opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-center">
-                    <Image className="h-8 w-8 mx-auto mb-2" />
-                    <div className="font-semibold">{image.title}</div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-black/0 group-hover:from-black/70 transition-all duration-300">
+                  <div className="absolute bottom-4 left-4 right-4">
+                    <div className="text-white font-semibold text-lg mb-1 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
+                      {image.title}
+                    </div>
+                    <div className="text-white/80 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-100">
+                      Click to view full size
+                    </div>
+                  </div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="bg-white/90 backdrop-blur-sm rounded-full p-3 opacity-0 group-hover:opacity-100 transition-all duration-300 transform scale-75 group-hover:scale-100 shadow-lg">
+                    <Image className="h-6 w-6 text-gray-700" />
                   </div>
                 </div>
               </div>

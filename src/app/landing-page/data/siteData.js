@@ -94,9 +94,7 @@ export const siteData = {
     email: "expertmike@yahoo.com",
     location: "Kelowna, BC, Canada",
     social: [
-      { platform: "Instagram", icon: Instagram, url: "#" },
-      { platform: "Facebook", icon: Facebook, url: "#" },
-      { platform: "Youtube", icon: Youtube, url: "#" },
+      { platform: "Facebook", icon: Facebook, url: "https://www.facebook.com/michael.schulze.286799" },
     ],
     consultationLine: "Contact me if you’d like to discuss your project.",
     projectPrompt:

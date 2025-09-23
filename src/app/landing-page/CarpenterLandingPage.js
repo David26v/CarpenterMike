@@ -146,7 +146,7 @@ const CarpenterPortfolio = () => {
               className="absolute inset-0 bg-cover bg-center opacity-40"
             >
               <Image 
-                src='/images/remade.png'
+                src='/images/CarpenterMike.png'
                 alt="Carpenter Mike Remodeling"
                 fill
                 style={{ objectFit: 'cover' }}

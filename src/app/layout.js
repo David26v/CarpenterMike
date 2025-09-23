@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
       description: "30+ years of residential & commercial remodeling in Kelowna, BC. Kitchens, bathrooms, custom woodwork & office makeovers. Free quotes.",
       images: [
         {
-          url: "https://carpentermike.com/images/hero-remodeling.png",
+          url: "https://carpentermike.com/images/CarpenterMike.png.png",
           width: 1200,
           height: 630,
           alt: "Carpenter Mike Remodeling - Kelowna Kitchen & Bathroom Renovations",
@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
       title: "Carpenter Mike | Kelowna's Trusted Renovation Specialist",
       description: "30+ years of residential & commercial remodeling in Kelowna, BC. Kitchens, bathrooms, custom woodwork & office makeovers. Free quotes.",
       creator: "@CarpenterMikeBC",
-      images: ["https://carpentermike.com/images/hero-remodeling.png"],
+      images: ["https://carpentermike.com/images/CarpenterMike.png.png"],
     },
   };
 
