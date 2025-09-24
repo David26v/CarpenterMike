@@ -12,12 +12,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import {
-  Phone,
-  Star,
-  ArrowRight,
-  Eye,
-} from "lucide-react";
+import { Phone, Star, ArrowRight, Eye, Hammer } from "lucide-react";
 import { jobs } from "./data/Jobs";
 import { siteData } from "./data/siteData";
 import ContactUs from "./components/contact";
@@ -56,7 +51,7 @@ const CarpenterPortfolio = () => {
 
   const scrollToSection = (sectionId) => {
     window.location.hash = sectionId;
-  
+
     const element = document.getElementById(sectionId);
     if (element) {
       window.scrollTo({
@@ -64,34 +59,30 @@ const CarpenterPortfolio = () => {
         behavior: "smooth",
       });
     }
-  
+
     setIsMenuOpen(false);
   };
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
-
-
   const handleContactSubmit = async (e) => {
     e.preventDefault();
-  
+
     const formData = {
       name: e.target.name.value,
       email: e.target.email.value,
       message: e.target.message.value,
     };
-  
+
     await fetch("/api/contact", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(formData),
     });
-  
+
     alert("Message sent!");
     e.target.reset();
   };
-  
-
 
   const handleViewDetalJob = (id) => {
     router.push(`/landing-page/${id}`);
@@ -100,19 +91,19 @@ const CarpenterPortfolio = () => {
   useEffect(() => {
     const updateActiveSection = () => {
       const hash = window.location.hash.slice(1);
-      if (['home', 'about', 'jobs', 'contact'].includes(hash)) {
+      if (["home", "about", "jobs", "contact"].includes(hash)) {
         setActiveSection(hash);
       } else {
-        setActiveSection('home');
+        setActiveSection("home");
       }
     };
-  
+
     updateActiveSection();
-  
-    window.addEventListener('hashchange', updateActiveSection);
-  
+
+    window.addEventListener("hashchange", updateActiveSection);
+
     return () => {
-      window.removeEventListener('hashchange', updateActiveSection);
+      window.removeEventListener("hashchange", updateActiveSection);
     };
   }, []);
 
@@ -128,33 +119,21 @@ const CarpenterPortfolio = () => {
         }}
       />
 
-      <Navbar 
+      <Navbar
         siteData={siteData}
         scrollToSection={scrollToSection}
-        activeSection ={activeSection} 
+        activeSection={activeSection}
         scrollY={scrollY}
-        toggleMenu ={toggleMenu }
+        toggleMenu={toggleMenu}
         isMenuOpen={isMenuOpen}
       />
 
       {/* Home Section */}
-      {activeSection === "home" &&  (
+      {activeSection === "home" && (
         <>
           {/* Simple Hero */}
-          <section className="relative min-h-screen flex items-center bg-slate-800">
-            <div
-              className="absolute inset-0 bg-cover bg-center opacity-40"
-            >
-              <Image 
-                src='/images/CarpenterMike.png'
-                alt="Carpenter Mike Remodeling"
-                fill
-                style={{ objectFit: 'cover' }}
-                priority
-                quality={100}
-              />
-
-            </div>
+          <section className="relative min-h-screen flex items-center bg-gray-500">
+            <div className="absolute inset-0 bg-gradient-to-br from-gray-500 via-gray-600 to-gray-500"></div>
 
             <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
               <div className="max-w-4xl mx-auto">
@@ -173,11 +152,12 @@ const CarpenterPortfolio = () => {
                       : "translate-y-10 opacity-0"
                   }`}
                 >
-                 Complete Remodeling, Renovations & Makeovers  Residential & Commercial Interior.
+                  Complete Remodeling, Renovations & Makeovers Residential &
+                  Commercial Interior.
                 </h1>
 
                 <p
-                  className={`text-lg md:text-xl mb-8 text-gray-200 max-w-3xl mx-auto transition-all duration-1000 delay-400 ${
+                  className={`text-lg md:text-xl mb-8 text-gray-100 max-w-3xl mx-auto transition-all duration-1000 delay-400 ${
                     isLoaded
                       ? "translate-y-0 opacity-100"
                       : "translate-y-10 opacity-0"
@@ -205,7 +185,7 @@ const CarpenterPortfolio = () => {
                     size="lg"
                     variant="default"
                     onClick={() => scrollToSection("jobs")}
-                    className="bg-white text-black border-white hover:bg-white hover:text-slate-800 px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300"
+                    className="bg-white text-gray-800 border-white hover:bg-gray-100 hover:text-gray-900 px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300"
                   >
                     <Eye className="mr-2 h-5 w-5" />
                     View My Works
@@ -213,26 +193,20 @@ const CarpenterPortfolio = () => {
                 </div>
 
                 <div
-                  className={`mt-12 text-white/80 text-sm transition-all duration-1000 delay-800 ${
+                  className={`mt-12 text-gray-200 text-sm transition-all duration-1000 delay-800 ${
                     isLoaded
                       ? "translate-y-0 opacity-100"
                       : "translate-y-10 opacity-0"
                   }`}
-                >
-                 
-                </div>
+                ></div>
               </div>
             </div>
           </section>
-
           {/* Video Section */}
-          <VideoSection
-            scrollToSection={scrollToSection}
-          />
+          <VideoSection scrollToSection={scrollToSection} />
 
-         
           {/* Simple Services */}
-          <section id ='services' className="py-16 bg-gray-50">
+          <section id="services" className="py-16 bg-gray-50">
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
               <div className="text-center mb-12">
                 <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-800">
@@ -259,33 +233,36 @@ const CarpenterPortfolio = () => {
                       </CardDescription>
                     </CardContent>
                     <CardFooter>
-                    <Button
-                      variant="link"
-                      className="text-amber-600 w-full justify-center hover:text-amber-700"
-                      onClick={() => {
-                        const serviceRoutes = {
-                          'Kitchen Renovations': '/services/kitchen-renovations',
-                          'Bathroom Renovations': '/services/bathroom-renovations', 
-                          'Custom Woodwork': '/services/custom-woodwork',
-                          'General Home Projects': '/services/general-home-projects',
-                          'Commercial Interiors': '/services/commercial-interiors'
-                        };
-                        router.push(serviceRoutes[service.title]);
-                      }}
-                    >
-                      Learn More
-                      <ArrowRight className="ml-2 h-4 w-4" />
-                    </Button>
-                  </CardFooter>
+                      <Button
+                        variant="link"
+                        className="text-amber-600 w-full justify-center hover:text-amber-700"
+                        onClick={() => {
+                          const serviceRoutes = {
+                            "Kitchen Renovations":
+                              "/services/kitchen-renovations",
+                            "Bathroom Renovations":
+                              "/services/bathroom-renovations",
+                            "Custom Woodwork": "/services/custom-woodwork",
+                            "General Home Projects":
+                              "/services/general-home-projects",
+                            "Commercial Interiors":
+                              "/services/commercial-interiors",
+                          };
+                          router.push(serviceRoutes[service.title]);
+                        }}
+                      >
+                        Learn More
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </CardFooter>
                   </Card>
                 ))}
               </div>
             </div>
           </section>
 
-         {/* Simple Process */}
-          <Process/>
-
+          {/* Simple Process */}
+          <Process />
 
           {/* Simple Testimonial */}
           <section className="py-16 bg-gray-800 text-white">
@@ -312,18 +289,12 @@ const CarpenterPortfolio = () => {
       )}
 
       {activeSection === "about" && (
-        <AboutUs 
-          siteData={siteData}
-          scrollToSection={scrollToSection}
-        />
+        <AboutUs siteData={siteData} scrollToSection={scrollToSection} />
       )}
 
       {/* Premium Portfolio */}
       {activeSection === "jobs" && (
-          <JobsDone 
-            jobs={jobs} 
-            NavigateToDetailed={handleViewDetalJob} 
-          />
+        <JobsDone jobs={jobs} NavigateToDetailed={handleViewDetalJob} />
       )}
 
       {/* Premium Contact */}
@@ -346,9 +317,7 @@ const CarpenterPortfolio = () => {
       </div>
 
       {/* Premium Footer */}
-      <Footer 
-        siteData={siteData}
-      />
+      <Footer siteData={siteData} />
 
       {/* Custom Styles */}
       <style jsx>{`
