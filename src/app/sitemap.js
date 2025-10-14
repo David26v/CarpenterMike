@@ -27,7 +27,7 @@ export default function sitemap() {
         changeFrequency: "yearly",
         priority: 0.8,
       },
-      // Services
+      
       {
         url: `${baseUrl}/services/bathroom-renovations`,
         lastModified: new Date().toISOString(),

@@ -2,8 +2,8 @@ const fs = require('fs');
 const path = require('path');
 
 // === CONFIGURE THESE ===
-const folderPath = 'public/gallery/Tatiana-Vanity-Bathroom';
-const prefix = '/gallery/Tatiana-Vanity-Bathroom';         
+const folderPath = 'public/gallery/Tatiana_guest_bedroom_makeover';
+const prefix = '/gallery/Tatiana_guest_bedroom_makeover';         
 
 // =======================
 

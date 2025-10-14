@@ -70,7 +70,7 @@ export const siteData = {
   about: {
     name: "Michael F. Schulze",
     title: "Carpenter & Renovation Specialist",
-    image: "/images/mike_about.jpg",
+    image: "/images/mikes-new.jpeg",
     story: `I’m an all-trades craftsman with over 30 years of experience. My work goes far beyond carpentry, as my photo gallery demonstrates. 
     I’ve performed:
     • Remodels (changing the structure)

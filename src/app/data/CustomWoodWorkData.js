@@ -4,22 +4,22 @@ import { Home, Ruler, Hammer, Wrench, Shield } from "lucide-react";
 const woodworkImages = [
   {
     src: "/gallery/AkiKitchenMakeover/aki8.jpg",
-    alt: "Built-in storage solutions Kelowna - custom woodwork and cabinetry by Carpenter Mike",
+    alt: "Built-in storage solutions Las Vegas - custom woodwork and cabinetry by Carpenter Mike",
     title: "Built-in Storage"
   },
   {
     src: "/gallery/Ashworth_Kitchen_Makeover/IMG_5182.jpg",
-    alt: "Custom cabinet installation Kelowna - handcrafted kitchen cabinets and millwork",
+    alt: "Custom cabinet installation Las Vegas - handcrafted kitchen cabinets and millwork",
     title: "Custom Cabinet Work"
   },
   {
     src: "/gallery/Ashworth_Kitchen_Makeover/IMG_5500.jpg",
-    alt: "Custom shelving Kelowna BC - built-in bookcase and storage solutions",
+    alt: "Custom shelving Las Vegas  - built-in bookcase and storage solutions",
     title: "Custom Shelving"
   },
   {
     src: "/gallery/Ashworth_Kitchen_Makeover/IMG_7027.jpg",
-    alt: "Storage solutions Kelowna - custom woodwork and organizational systems",
+    alt: "Storage solutions Las Vegas - custom woodwork and organizational systems",
     title: "Storage Solutions"
   },
 ];
@@ -28,16 +28,30 @@ const beforeAfterImages = [
   {
     before: "/gallery/Elizabeth_Kitchen_Makeover/Before 1.jpeg",
     after: "/gallery/Elizabeth_Kitchen_Makeover/IMG_7914.jpg",
-    title: "Elizabeth's Complete Kitchen Transformation - Kelowna",
-    description: "Complete kitchen renovation featuring new cabinets, modern countertops, and improved lighting. This Kelowna kitchen makeover transformed an outdated space into a functional, beautiful cooking area with quality craftsmanship and attention to detail.",
+    title: "Elizabeth's Complete Kitchen Transformation - Las Vegas",
+    description: "Complete kitchen renovation featuring new cabinets, modern countertops, and improved lighting. This Las Vegas kitchen makeover transformed an outdated space into a functional, beautiful cooking area with quality craftsmanship and attention to detail.",
     url:'/landing-page/9'
   },
   {
     before: "/gallery/AkiKitchenMakeover/aki1.jpg",
     after: "/gallery/AkiKitchenMakeover/aki12.jpg",
     url:'/landing-page/2',
-    title: "Aki's Custom Kitchen Cabinet Project - Kelowna",
-    description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Kelowna custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
+    title: "Aki's Custom Kitchen Cabinet Project - Las Vegas",
+    description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Las Vegas custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
+  },
+  {
+    before: "/gallery/Trailer_Project/1.jpg",
+    after: "/gallery/Trailer_Project/IMG_7655.jpg",
+    url:'/landing-page/24',
+    title: "Trailer Conversion Project - Las Vegas",
+    description:"Custom interior build-out for trailer conversion into mobile office or living space.",
+  },
+  {
+    before:  "/gallery/Shed/IMG_2919.jpg",
+    after:  "/gallery/Shed/IMG_3878.jpg",
+    url:'/landing-page/19',
+    title: "Custom Shed Build - Las Vegas",
+    description:"Custom interior build-out for trailer conversion into mobile office or living space.",
   },
 ];
 

@@ -9,23 +9,23 @@ import {
 export const bathroomImages = [
   {
     src: "/gallery/Tatiana-Vanity-Bathroom/tatian-bathroom.jpg",
-    alt: "Modern bathroom renovation in Kelowna with custom walk-in shower, tile work, and sleek finishes by Carpenter Mike",
-    title: "Modern Bathroom Design - Kelowna"
+    alt: "Modern bathroom renovation in Las Vegas with custom walk-in shower, tile work, and sleek finishes by Carpenter Mike",
+    title: "Modern Bathroom Design - Las Vegas "
   },
   {
     src: "/gallery/Tatiana-Vanity-Bathroom/IMG_5038.jpg",
-    alt: "Custom bathroom vanity installation in Kelowna - professional bathroom remodeling and storage solutions",
+    alt: "Custom bathroom vanity installation in Las Vegas  - professional bathroom remodeling and storage solutions",
     title: "Custom Vanity Installation"
   },
   {
     src: "/gallery/Tatiana-Vanity-Bathroom/IMG_5550.jpg",
-    alt: "Complete bathroom remodel in Kelowna, BC featuring new vanity, updated fixtures, and high-quality tile work",
+    alt: "Complete bathroom remodel in Las Vegas , BC featuring new vanity, updated fixtures, and high-quality tile work",
     title: "Full Bathroom Remodel"
   },
   {
     src: "/gallery/Ashworth_Tile_Job/IMG_4002.jpg",
-    alt: "Expert bathroom tile installation and waterproofing in Kelowna - custom tile design for long-lasting results",
-    title: "Custom Tile Installation - Kelowna"
+    alt: "Expert bathroom tile installation and waterproofing in Las Vegas  - custom tile design for long-lasting results",
+    title: "Custom Tile Installation - Las Vegas "
   },
 ];
 
@@ -34,8 +34,8 @@ export const beforeAfterImages = [
     before: "/gallery/Tatiana-Vanity-Bathroom/IMG_5038.jpg",
     after: "/gallery/Tatiana-Vanity-Bathroom/IMG_5550.jpg",
     url:'/landing-page/23',
-    title: "Custom Bathroom Vanity Renovation - Kelowna Before & After",
-    description: "Stunning bathroom vanity renovation in Kelowna featuring a modern design, upgraded fixtures, quality tile work, and professional installation."
+    title: "Custom Bathroom Vanity Renovation - Las Vegas Before & After",
+    description: "Stunning bathroom vanity renovation in Las Vegas  featuring a modern design, upgraded fixtures, quality tile work, and professional installation."
   },
 ];
 

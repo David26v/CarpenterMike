@@ -10,22 +10,22 @@ import {
 const commercialImages = [
   {
     src: "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
-    alt: "Commercial interior renovation Kelowna - professional business space remodeling",
+    alt: "Commercial interior renovation Las Vegas - professional business space remodeling",
     title: "Commercial Renovation"
   },
   {
     src: "/gallery/Ashworth_Tile_Job/IMG_4140.jpg",
-    alt: "Business interior design Kelowna - commercial tile work and flooring installation",
+    alt: "Business interior design Las Vegas - commercial tile work and flooring installation",
     title: "Business Interior"
   },
   {
     src: "/gallery/Ashworth_Tile_Job/IMG_5006.jpg",
-    alt: "Commercial remodel Kelowna BC - professional business renovation services",
+    alt: "Commercial remodel Las Vegas BC - professional business renovation services",
     title: "Commercial Remodel"
   },
   {
     src: "/gallery/Ashworth_Tile_Job/IMG_4973 (1).jpg",
-    alt: "Commercial cabinet work Kelowna - custom business storage and millwork solutions",
+    alt: "Commercial cabinet work Las Vegas - custom business storage and millwork solutions",
     title: "Commercial Cabinets"
   },
 ];
@@ -34,9 +34,9 @@ const beforeAfterImages = [
   {
     before: "/gallery/Ashworth_Tile_Job/IMG_4140.jpg",
     after: "/gallery/Ashworth_Tile_Job/IMG_4141.jpg",
-    title: "Ashworth Commercial Tile Installation - Kelowna",
+    title: "Ashworth Commercial Tile Installation - Las Vegas",
     url:'/landing-page/7',
-    description: "Professional commercial tile installation featuring expert craftsmanship, quality materials, and precise installation. This Kelowna commercial project demonstrates professional tile work for business environments.",
+    description: "Professional commercial tile installation featuring expert craftsmanship, quality materials, and precise installation. This Las Vegas commercial project demonstrates professional tile work for business environments.",
   },
   {
     before:  "/gallery/Wellness-Spa/IMG_7300.jpg",
@@ -46,12 +46,20 @@ const beforeAfterImages = [
     description:  "Complete wellness spa build with sauna, shower, relaxation area, and premium wood finishes.",
   },
   {
-    before:    "/gallery/Baskins-Robbins-Repair/IMG_8269.jpg",
-    after:    "/gallery/Wellness-Spa/IMG_8072.jpg",
+    before: "/gallery/Baskins-Robbins-Repair/IMG_8269.jpg",
+    after: "/gallery/Baskins-Robbins-Repair/IMG_8424.jpg",
     url:'/landing-page/8',
     title: "Baskins-Robbins Repair -Las Vegas",
     description:  "Complete wellness spa build with sauna, shower, relaxation area, and premium wood finishes.",
   },
+  {
+    before: "/gallery/FAITH/IMG_6481.jpg",
+    after:   "/gallery/FAITH/IMG_8665.jpg",
+    url:'/landing-page/11',
+    title: "Faith Religous Services -Las Vegas",
+    description: "Custom window framing and installation with enhanced insulation and aesthetic wood trim."
+  },
+  
 ];
 
 const processes = [
