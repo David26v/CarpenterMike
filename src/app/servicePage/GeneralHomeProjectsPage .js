@@ -78,7 +78,7 @@ const GeneralHomeProjectsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                General Home Projects in Kelowna
+                General Home Projects
               </h1>
               <p className="text-xl mb-8 text-orange-100">
                 Reliable solutions for all your home improvement needs. From painting and repairs to flooring and maintenance, no project is too big or small.

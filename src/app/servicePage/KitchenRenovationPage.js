@@ -80,7 +80,7 @@ const KitchenRenovationPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Kitchen Renovations in Kelowna
+                Kitchen Renovations
               </h1>
               <p className="text-xl mb-8 text-amber-100">
                 Transform your kitchen with quality craftsmanship and personal

@@ -77,7 +77,7 @@ const BathroomRenovationPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Bathroom Renovations in Kelowna
+                Bathroom Renovations
               </h1>
               <p className="text-xl mb-8 text-blue-100">
                 Create a beautiful, functional bathroom with quality craftsmanship. From tile work to complete renovations, I handle every detail with care and experience.

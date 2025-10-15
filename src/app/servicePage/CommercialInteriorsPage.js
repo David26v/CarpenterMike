@@ -78,7 +78,7 @@ const CommercialInteriorsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Commercial Interiors in Kelowna
+                Commercial Interiors
               </h1>
               <p className="text-xl mb-8 text-orange-100">
                 Professional commercial interior work for businesses. From renovations to custom cabinet builds, I help create functional spaces that serve your business needs.

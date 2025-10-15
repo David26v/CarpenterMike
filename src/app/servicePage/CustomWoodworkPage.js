@@ -70,7 +70,7 @@ const CustomWoodworkPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h1 className="text-4xl md:text-6xl font-bold mb-6">
-                Custom Woodwork in Kelowna
+                Custom Woodwork
               </h1>
               <p className="text-xl mb-8 text-green-100">
                 Quality custom woodwork and built-ins that maximize space and add character to your home. From cabinets to storage solutions, every piece is crafted with care.

@@ -27,6 +27,8 @@ export default function RootLayout({ children }) {
       creator: "@CarpenterMikeBC",
       images: ["https://carpentermike.com/gallery/Wellness-Spa/IMG_7328.jpg"],
     },
+    keywords: "Kelowna carpenter, Kelowna renovations, Kelowna kitchen remodel, Kelowna bathroom remodel, Kelowna custom woodwork",
+    
   };
 
   return (

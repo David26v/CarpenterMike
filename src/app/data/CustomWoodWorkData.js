@@ -34,7 +34,7 @@ const beforeAfterImages = [
   },
   {
     before: "/gallery/AkiKitchenMakeover/aki1.jpg",
-    after: "/gallery/AkiKitchenMakeover/aki12.jpg",
+    after:  "/gallery/AkiKitchenMakeover/aki8.jpg",
     url:'/landing-page/2',
     title: "Aki's Custom Kitchen Cabinet Project - Las Vegas",
     description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Las Vegas custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
@@ -56,7 +56,6 @@ const beforeAfterImages = [
 ];
 
 
-  // Simplified, honest process description
   const processes = [
     {
       step: "1",
