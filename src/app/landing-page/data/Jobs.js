@@ -336,7 +336,7 @@ export const jobs = [
       "Precision tile installation in kitchen and bathroom areas, with custom patterns and moisture-resistant sealing.",
     rating: 5,
     category: "Renovation",
-    preview_images: "/gallery/Ashworth_Tile_Job/IMG_3992.jpg",
+    preview_images:       "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
     gallery: [
       "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_1720.jpg",
