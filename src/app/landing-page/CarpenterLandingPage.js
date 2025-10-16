@@ -203,7 +203,9 @@ const CarpenterPortfolio = () => {
             </div>
           </section>
           {/* Video Section */}
-          <VideoSection scrollToSection={scrollToSection} />
+          <VideoSection 
+           scrollToSection={scrollToSection} 
+          />
 
           {/* Simple Services */}
           <section id="services" className="py-16 bg-gray-50">

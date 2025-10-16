@@ -38,7 +38,7 @@ const beforeAfterImages = [
   },
   {
     before: "/gallery/AkiKitchenMakeover/aki1.jpg",
-    after:  "/gallery/AkiKitchenMakeover/aki8.jpg",
+    after:  "/gallery/AkiKitchenMakeover/aki9.jpg",
     url:'/landing-page/2',
     title: "Aki's Custom Kitchen Cabinet Project - Las Vegas",
     description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Las Vegas custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
@@ -58,7 +58,7 @@ const beforeAfterImages = [
     description: "Professional custom hood installation featuring structural reinforcement, precise fitting, and quality finish work. This Las Vegas home improvement project upgraded kitchen ventilation while enhancing the overall aesthetic and functionality of the space.",
   },
   {
-    before: "/gallery/Anderson_Kitchen_Island/IMG_4514.jpg",
+    before: "/gallery/Anderson_Kitchen_Island/IMG_4679.jpg",
     after: "/gallery/Anderson_Kitchen_Island/IMG_5819.jpg",
     url:'/landing-page/4',
     title: "Anderson Kitchen Island - Las Vegas",

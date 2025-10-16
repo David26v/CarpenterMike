@@ -40,7 +40,7 @@ const beforeAfterImages = [
   },
   {
     before:  "/gallery/Wellness-Spa/IMG_7300.jpg",
-    after:    "/gallery/Wellness-Spa/IMG_8072.jpg",
+    after:   "/gallery/Wellness-Spa/IMG_7627.jpg",
     url:'/landing-page/28',
     title: "Wellness Spa Interior Makeover",
     description:  "Complete wellness spa build with sauna, shower, relaxation area, and premium wood finishes.",

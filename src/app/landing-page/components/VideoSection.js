@@ -5,7 +5,7 @@ const VideoSection = ({ scrollToSection }) => {
   const [isPlaying, setIsPlaying] = useState(true);
   const [isMuted, setIsMuted] = useState(true);
   const [isVisible, setIsVisible] = useState(false);
-  const [showControls, setShowControls] = useState(false); // NEW STATE
+  const [showControls, setShowControls] = useState(false); 
   const videoRef = useRef(null);
   const sectionRef = useRef(null);
 
@@ -31,7 +31,6 @@ const VideoSection = ({ scrollToSection }) => {
     return () => observer.disconnect();
   }, []);
 
-  // Auto-hide controls after 2 seconds of inactivity
   useEffect(() => {
     let timeoutId;
     if (showControls) {
@@ -130,7 +129,7 @@ const VideoSection = ({ scrollToSection }) => {
                 muted
                 loop
                 playsInline
-                poster="/home_page_video_thumbnail.jpg"
+                poster="/home_page_video_thumbnail.png"
                 preload="auto"
                 onLoadedData={() => {
                   if (videoRef.current && isVisible) {

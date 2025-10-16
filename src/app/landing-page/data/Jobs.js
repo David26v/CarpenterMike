@@ -93,7 +93,7 @@ export const jobs = [
       "Stunning custom kitchen island in Las Vegas with waterfall edge countertop, storage drawers, and breakfast bar seating.",
     category: "Kitchen",
     rating: 5,
-    preview_images: "/gallery/Anderson_Kitchen_Island/IMG_4514.jpg",
+    preview_images: "/gallery/Anderson_Kitchen_Island/IMG_5152.jpg",
     gallery: [
       "/gallery/Anderson_Kitchen_Island/IMG_4514.jpg",
       "/gallery/Anderson_Kitchen_Island/IMG_4515.jpg",
@@ -235,6 +235,59 @@ export const jobs = [
     rating: 5,
     preview_images: "/gallery/Ashworth_Kitchen_Makeover/IMG_3921.jpg",
     gallery: [
+      // BEFORE - Dark cabinets (pictures 41-50 from original, plus picture 12)
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4842.jpg", // was picture 41
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4844.jpg", // was picture 42
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4852.jpg", // was picture 43
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4853.jpg", // was picture 44
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4854.jpg", 
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4855.jpg", 
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4857.jpg", // was picture 47
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4858.jpg", // was picture 48
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4859.jpg", // was picture 49
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4860.jpg", // was picture 50
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4868.jpg",
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4869.jpg",
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4870.jpg",
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4873.jpg", // was picture 12 - existing kitchen
+      
+      // DURING - Construction (picture 13, then pictures 26-28, then tile work)
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4874.jpg", // was picture 13 - cabinets removed
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4875.jpg",
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5003.jpg", // was picture 26 - installing new cabinets
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5057.jpg", // was picture 27
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5058.jpg", // was picture 28
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5109.jpg",
+      
+      // Tile work
+      "/gallery/Ashworth_Tile_Job/IMG_4169.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4170.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4171.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4173.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4175.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4176.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4178.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4180.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4181.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4182.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4194.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4196.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4197.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4948.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_4973.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_5011.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_5178.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_5192.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_5193.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_5196.jpg",
+      "/gallery/Ashworth_Tile_Job/IMG_5197.jpg",
+      // SHED PHOTO REMOVED - was /gallery/Ashworth_Tile_Job/IMG_5198.jpg (picture 61)
+      
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5110.jpg",
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5127.jpg",
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5132.jpg",
+      
+      // AFTER - Light cabinets (finished kitchen - pictures 1-11, 14-25, and remaining)
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3921.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3922.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3923.jpg",
@@ -254,52 +307,6 @@ export const jobs = [
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4639.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4640.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4641.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4842.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4844.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4852.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4853.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4854.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4855.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4857.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4858.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4859.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4860.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4868.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4869.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4870.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4873.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4874.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4875.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5003.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5057.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5058.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5109.jpg",
-      ///move items
-      "/gallery/Ashworth_Tile_Job/IMG_4169.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4170.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4171.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4173.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4175.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4176.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4178.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4180.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4181.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4182.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4194.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4196.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4197.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4948.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4973.jpg",     
-      "/gallery/Ashworth_Tile_Job/IMG_5011.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_5178.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_5192.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_5193.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_5196.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_5197.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_5198.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5110.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5127.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5132.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5162.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5169.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5170.jpg",
@@ -383,21 +390,7 @@ export const jobs = [
       "/gallery/Ashworth_Tile_Job/IMG_4030.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4031.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4032.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4083.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4084.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4086.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4087.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4090.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4091.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4140.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4141.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4142.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4143.jpg",
 
-      // "/gallery/Ashworth_Tile_Job/IMG_4235.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4237.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4239.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4260.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4281.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4282.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4283.jpg",
@@ -415,12 +408,11 @@ export const jobs = [
       "/gallery/Ashworth_Tile_Job/IMG_4303.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4304.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4306.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4307 (1).jpg",
+
       "/gallery/Ashworth_Tile_Job/IMG_4307.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4308.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4309.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4310.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4322.jpg",
+
       "/gallery/Ashworth_Tile_Job/IMG_4323.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4324.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4325.jpg",
@@ -448,8 +440,7 @@ export const jobs = [
       "/gallery/Ashworth_Tile_Job/IMG_4385.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4386.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4387.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4400.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4401.jpg",
+
       "/gallery/Ashworth_Tile_Job/IMG_4442.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4443.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4444.jpg",
@@ -480,7 +471,6 @@ export const jobs = [
       "/gallery/Ashworth_Tile_Job/IMG_4754.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4755.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4756.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4757 (1).jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4758 (1).jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4759.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4907.jpg",
@@ -497,28 +487,17 @@ export const jobs = [
       "/gallery/Ashworth_Tile_Job/IMG_4924.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4925.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4931.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4932.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4933.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4934.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4935.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4939.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4940.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4941.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4943.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4944.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4945.jpg",
-
-      // "/gallery/Ashworth_Tile_Job/IMG_4949.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4950.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4952.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4953.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4972 (1).jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4972.jpg",
-  
-      // "/gallery/Ashworth_Tile_Job/IMG_4984.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4985.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4986.jpg",
-      // "/gallery/Ashworth_Tile_Job/IMG_4987.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4988.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4989.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4990.jpg",
@@ -537,7 +516,6 @@ export const jobs = [
       "/gallery/Ashworth_Tile_Job/IMG_5006.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_5174.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_5175.jpg",
-
       "/gallery/Ashworth_Tile_Job/IMG_5179.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_5180.jpg",
 
