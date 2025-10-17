@@ -233,46 +233,61 @@ export const jobs = [
       "Full kitchen renovation with new cabinets, countertops, lighting, and layout improvements for enhanced functionality.",
     category: "Kitchen",
     rating: 5,
-    preview_images: "/gallery/Ashworth_Kitchen_Makeover/IMG_3921.jpg",
+    preview_images: "/gallery/Ashworth_Kitchen_Makeover/IMG_5181.jpg",
     gallery: [
-      // BEFORE - Dark cabinets (pictures 41-50 from original, plus picture 12)
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4842.jpg", // was picture 41
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4844.jpg", // was picture 42
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4852.jpg", // was picture 43
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4853.jpg", // was picture 44
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4854.jpg", 
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4855.jpg", 
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4857.jpg", // was picture 47
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4858.jpg", // was picture 48
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4859.jpg", // was picture 49
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4860.jpg", // was picture 50
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4868.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4869.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4870.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4873.jpg", // was picture 12 - existing kitchen
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4854.jpg", // Display 1 = Picture 45
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4855.jpg", // Display 2 = Picture 46
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4857.jpg", // Display 3 = Picture 47
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4858.jpg", // Display 4 = Picture 48
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4859.jpg", // Display 5 = Picture 49
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4860.jpg", // Display 6 = Picture 50
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4868.jpg", // Display 7 = Picture 51
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4869.jpg", // Display 8 = Picture 52
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4870.jpg", // Display 9 = Picture 53
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4873.jpg", // Display 10 = Picture 54
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4842.jpg", // Display 11 = Picture 55
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4844.jpg", // Display 12 = Picture 56
       
-      // DURING - Construction (picture 13, then pictures 26-28, then tile work)
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4874.jpg", // was picture 13 - cabinets removed
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4875.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5003.jpg", // was picture 26 - installing new cabinets
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5057.jpg", // was picture 27
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5058.jpg", // was picture 28
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5109.jpg",
-      
-      // Tile work
-      "/gallery/Ashworth_Tile_Job/IMG_4169.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4170.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4171.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4173.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4175.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4176.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4178.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4180.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4181.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4182.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4194.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4196.jpg",
-      "/gallery/Ashworth_Tile_Job/IMG_4197.jpg",
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5057.jpg", // Display 13 = Picture 29
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5058.jpg", // Display 14 = Picture 30
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5003.jpg", // Display 15 = Picture 25
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5109.jpg", // Display 16 = Picture 27
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5110.jpg", // Display 17 = Picture 28
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4875.jpg", // Display 18 = Picture 24
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4874.jpg", // Display 19 = Picture 23
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4853.jpg", // Display 20 = Picture 22
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4852.jpg", // Display 21 = Picture 21
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5127.jpg", // Display 22 = Picture 32
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5132.jpg", // Display 23 = Picture 33
+      "/gallery/Ashworth_Tile_Job/IMG_4169.jpg", // Display 24 = Picture 57
+      "/gallery/Ashworth_Tile_Job/IMG_4170.jpg", // Display 25 = Picture 58
+      "/gallery/Ashworth_Tile_Job/IMG_4171.jpg", // Display 26 = Picture 59
+      "/gallery/Ashworth_Tile_Job/IMG_4173.jpg", // Display 27 = Picture 60
+      "/gallery/Ashworth_Tile_Job/IMG_4175.jpg", // Display 28 = Picture 61
+      "/gallery/Ashworth_Tile_Job/IMG_4176.jpg", // Display 29 = Picture 62
+      "/gallery/Ashworth_Tile_Job/IMG_4178.jpg", // Display 30 = Picture 63
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_3926.jpg", // Display 31 = Picture 36
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_3930.jpg", // Display 32 = Picture 40
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_3928.jpg", // Display 33 = Picture 39
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_3927.jpg", // Display 34 = Picture 38
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_3931.jpg", // Display 35 = Picture 41
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_3933.jpg", // Display 36 = Picture 43
+      "/gallery/Ashworth_Tile_Job/IMG_4180.jpg", // Display 37 = Picture 64
+      "/gallery/Ashworth_Tile_Job/IMG_4181.jpg", // Display 38 = Picture 65
+      "/gallery/Ashworth_Tile_Job/IMG_4182.jpg", // Display 39 = Picture 66
+      "/gallery/Ashworth_Tile_Job/IMG_4194.jpg", // Display 40 = Picture 67
+      "/gallery/Ashworth_Tile_Job/IMG_4196.jpg", // Display 41 = Picture 68
+      "/gallery/Ashworth_Tile_Job/IMG_4197.jpg", // Display 42 = Picture 69
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5488.jpg", // Display 43 = Picture 84
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5492.jpg", // Display 44 = Picture 86
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5495.jpg", // Display 45 = Picture 87
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_4603.jpg", // Display 46 = Picture 73  
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5181.jpg", // Display 47 = Picture 77
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5182.jpg", // Display 48 = Picture 78
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5183.jpg", // Display 49 = Picture 79
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5188.jpg", // Display 50 = Picture 81
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5189.jpg", // Display 51 = Picture 82
+      "/gallery/Ashworth_Kitchen_Makeover/IMG_5190.jpg", // Display 52 = Picture 83
       "/gallery/Ashworth_Tile_Job/IMG_4948.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_4973.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_5011.jpg",
@@ -281,29 +296,15 @@ export const jobs = [
       "/gallery/Ashworth_Tile_Job/IMG_5193.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_5196.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_5197.jpg",
-      // SHED PHOTO REMOVED - was /gallery/Ashworth_Tile_Job/IMG_5198.jpg (picture 61)
-      
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5110.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5127.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5132.jpg",
-      
-      // AFTER - Light cabinets (finished kitchen - pictures 1-11, 14-25, and remaining)
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3921.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3922.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3923.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3924.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3925.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_3926.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_3927.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_3928.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_3930.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_3931.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_3932.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_3933.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4596.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4599.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4600.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_4603.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4639.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4640.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_4641.jpg",
@@ -313,22 +314,13 @@ export const jobs = [
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5172.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5176.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5177.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5181.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5182.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5183.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5188.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5189.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5190.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5191.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5364.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5365.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5453.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5486.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5487.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5488.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5489.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5492.jpg",
-      "/gallery/Ashworth_Kitchen_Makeover/IMG_5495.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5498.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5499.jpg",
       "/gallery/Ashworth_Kitchen_Makeover/IMG_5500.jpg",
@@ -343,7 +335,7 @@ export const jobs = [
       "Precision tile installation in kitchen and bathroom areas, with custom patterns and moisture-resistant sealing.",
     rating: 5,
     category: "Renovation",
-    preview_images:       "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
+    preview_images:     "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
     gallery: [
       "/gallery/Ashworth_Tile_Job/IMG_1719.jpg",
       "/gallery/Ashworth_Tile_Job/IMG_1720.jpg",
