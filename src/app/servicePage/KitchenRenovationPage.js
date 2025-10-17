@@ -120,7 +120,7 @@ const KitchenRenovationPage = () => {
             </div>
             <div className="relative">
               <img
-                src="/gallery/Ashworth_Kitchen_Makeover/IMG_5183.jpg"
+                src="/images/kitchen_innovation_bg.jpeg"
                 alt="Quality Kitchen Renovation"
                 className="rounded-2xl shadow-2xl w-full h-96 object-cover"
               />

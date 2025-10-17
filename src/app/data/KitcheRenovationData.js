@@ -44,8 +44,8 @@ const beforeAfterImages = [
     description: "Complete custom cabinet transformation featuring handcrafted woodwork, quality joinery, and professional installation. This Las Vegas custom woodwork project showcases expert craftsmanship in kitchen cabinet design and construction.",
   },
   {
-    before: "/gallery/Ashworth_Kitchen_Makeover/IMG_3924.jpg", 
-    after:  "/gallery/Ashworth_Kitchen_Makeover/IMG_5183.jpg", 
+    before: "/gallery/Ashworth_Kitchen_Makeover/ashworth_before.jpeg", 
+    after:  "/gallery/Ashworth_Kitchen_Makeover/ashworth_after.jpeg", 
     url:'/landing-page/6',
     title: "Ashworth Kitchen Makeover - Las Vegas",
     description: "Professional commercial tile installation featuring expert craftsmanship, quality materials, and precise installation. This Las Vegas commercial project demonstrates professional tile work for business environments.",

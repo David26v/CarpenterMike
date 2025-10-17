@@ -84,6 +84,9 @@ export const jobs = [
       "/gallery/AlPool/allpool32.jpg",
       "/gallery/AlPool/allpool34.jpg",
       "/gallery/AlPool/allpool36.jpg",
+      "/gallery/AlPool/alspool_new_1.jpeg",
+      "/gallery/AlPool/alspool_new_2.jpeg",
+      "/gallery/AlPool/alspool_new_3.jpeg",  
     ],
   },
   {
