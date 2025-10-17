@@ -747,6 +747,7 @@ export const jobs = [
     description:
       "Complete plumbing and shower installation for a commercial float spa. Work included pipe rerouting, valve replacement, waterproof wall framing, and precise tiling to ensure a durable, leak-free, and professional finish suited for a spa environment.",
     category: "Commercial",
+    preview_images:"/gallery/Floats-Spa/FloatSpa-1.jpeg",
     rating: 5,
     gallery: [
       "/gallery/Floats-Spa/FloatSpa-1.jpeg",
