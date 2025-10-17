@@ -188,7 +188,7 @@ const CarpenterPortfolio = () => {
                     className="bg-white text-gray-800 border-white hover:bg-gray-100 hover:text-gray-900 px-8 py-3 rounded-lg hover:scale-105 transition-all duration-300"
                   >
                     <Eye className="mr-2 h-5 w-5" />
-                    View My Works
+                    View My Work
                   </Button>
                 </div>
 

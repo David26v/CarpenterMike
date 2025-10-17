@@ -44,7 +44,7 @@ export const jobs = [
   },
   {
     id: 3,
-    title: "Al Pool",
+    title: "Al's Pool",
     description: "Professional pool repair in Las Vegas with expert tile and surface restoration, ensuring safety, durability, and a refreshed outdoor space.",
     category: "Exterior",
     rating: 5,
@@ -741,17 +741,28 @@ export const jobs = [
       "/gallery/FAITH/IMG_8674.jpg"
     ],
   },
-  // {
-  //   id: 12,
-  //   title: "Float Spa",
-  //   description:
-  //     "Luxury floating spa structure with integrated seating, lighting, and water-resistant finishes.",
-  //   category: "Commercial",
-  //   rating: 5,
-  //   gallery: [
-      
-  //   ],
-  // },
+  {
+    id: 12,
+    title: "Float Spa",
+    description:
+      "Complete plumbing and shower installation for a commercial float spa. Work included pipe rerouting, valve replacement, waterproof wall framing, and precise tiling to ensure a durable, leak-free, and professional finish suited for a spa environment.",
+    category: "Commercial",
+    rating: 5,
+    gallery: [
+      "/gallery/Floats-Spa/FloatSpa-1.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-2.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-3.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-4.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-5.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-6.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-7.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-8.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-9.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-10.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-11.jpeg",
+      "/gallery/Floats-Spa/FloatsSpa-12.jpeg",
+    ],
+  },
   // {
   //   id: 13,
   //   title: "Jack’s Kitchen Makeover",
@@ -1389,6 +1400,7 @@ export const jobs = [
       "/gallery/Wellness-Spa/IMG_8090.jpg",
       "/gallery/Wellness-Spa/IMG_8091.jpg",
     ],
-    
   },
+  
+  
 ];

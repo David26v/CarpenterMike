@@ -52,7 +52,15 @@ const beforeAfterImages = [
     after:  "/gallery/absorbtionPit/absfinal2.jpg",
     url: "/landing-page/1",
     description: "Professional installation of an absorption pit for drainage and water management, built to last with durable materials and precise engineering."
+  },
+  {
+    before: "/gallery/AlPool/allpool3.jpg",
+    title: "Al's Pool - Las Vegas",
+    after: "/gallery/AlPool/alspool_new_3.jpeg",
+    url: "/landing-page/3",
+    description: "Complete pool restoration and resurfacing project featuring a rebuilt spa area, new tiling, and improved water circulation system. Enhanced the pool’s structure, drainage, and aesthetic appeal for long-term durability and a refreshed resort-style look."
   }
+  
   
 ];
 

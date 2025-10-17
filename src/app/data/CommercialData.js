@@ -59,6 +59,20 @@ const beforeAfterImages = [
     title: "Faith Religous Services -Las Vegas",
     description: "Custom window framing and installation with enhanced insulation and aesthetic wood trim."
   },
+  {
+    before: "/gallery/FAITH/IMG_6481.jpg",
+    after:"/gallery/FAITH/IMG_8665.jpg",
+    url:'/landing-page/11',
+    title: "Faith Religous Services -Las Vegas",
+    description: "Custom window framing and installation with enhanced insulation and aesthetic wood trim."
+  },
+  {
+    before:  "/gallery/Floats-Spa/FloatSpa-1.jpeg",
+    after:   "/gallery/Floats-Spa/FloatsSpa-12.jpeg",
+    title: "Float Spa - Las Vegas",
+    url: "/landing-page/12",
+    description:"Complete plumbing and shower installation for a commercial float spa. Work included pipe rerouting, valve replacement, waterproof wall framing, and precise tiling to ensure a durable, leak-free, and professional finish suited for a spa environment.",
+  }
   
 ];
 
